@@ -1,0 +1,32 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:base_app/infrastructure/_commons/network/user_session.dart';
+import 'package:base_app/presentation/_commons/route/app_router.gr.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part 'splash_event.dart';
+part 'splash_state.dart';
+part 'splash_bloc.freezed.dart';
+
+class SplashBloc extends Bloc<SplashEvent, SplashState> {
+  final UserSession _userSession;
+  SplashBloc(this._userSession) : super(const SplashState.loading()) {
+    on<SplashEvent>((event, emit) {});
+    on<StartLoading>((event, emit) async {
+      await Future.delayed(Duration(seconds: event.splashTime));
+      String? token = await _userSession.getAuthToken();
+      //bool? introIsShow = await _userSession.checkIntroIsShow();
+      // PageRouteInfo<dynamic> route = token != null
+      //     ? const HomeRoute()
+      //     : introIsShow != null && introIsShow == true
+      //         ? const LandingRoute()
+      //         : const IntroductionRoute();
+
+      // if (event.withDeepLink == true) {
+      //   route = const AppartementLinkRoute();
+      // }
+      PageRouteInfo<dynamic> route = const HomeRoute();
+      emit(SplashState.loaded(token != null, route));
+    });
+  }
+}
