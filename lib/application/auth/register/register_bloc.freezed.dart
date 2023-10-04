@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'register_bloc.dart';
 
@@ -26,10 +26,10 @@ mixin _$RegisterEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String buttonType)? click,
-    TResult Function(String fieldKey, String? value)? fieldChanged,
-    TResult Function(bool conditionCheck)? submit,
+    TResult? Function()? started,
+    TResult? Function(String buttonType)? click,
+    TResult? Function(String fieldKey, String? value)? fieldChanged,
+    TResult? Function(bool conditionCheck)? submit,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -51,10 +51,10 @@ mixin _$RegisterEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(Click value)? click,
-    TResult Function(FieldChanged value)? fieldChanged,
-    TResult Function(Submit value)? submit,
+    TResult? Function(_Started value)? started,
+    TResult? Function(Click value)? click,
+    TResult? Function(FieldChanged value)? fieldChanged,
+    TResult? Function(Submit value)? submit,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -72,40 +72,40 @@ mixin _$RegisterEvent {
 abstract class $RegisterEventCopyWith<$Res> {
   factory $RegisterEventCopyWith(
           RegisterEvent value, $Res Function(RegisterEvent) then) =
-      _$RegisterEventCopyWithImpl<$Res>;
+      _$RegisterEventCopyWithImpl<$Res, RegisterEvent>;
 }
 
 /// @nodoc
-class _$RegisterEventCopyWithImpl<$Res>
+class _$RegisterEventCopyWithImpl<$Res, $Val extends RegisterEvent>
     implements $RegisterEventCopyWith<$Res> {
   _$RegisterEventCopyWithImpl(this._value, this._then);
 
-  final RegisterEvent _value;
   // ignore: unused_field
-  final $Res Function(RegisterEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$_StartedCopyWith<$Res> {
-  factory _$$_StartedCopyWith(
-          _$_Started value, $Res Function(_$_Started) then) =
-      __$$_StartedCopyWithImpl<$Res>;
+abstract class _$$StartedImplCopyWith<$Res> {
+  factory _$$StartedImplCopyWith(
+          _$StartedImpl value, $Res Function(_$StartedImpl) then) =
+      __$$StartedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_StartedCopyWithImpl<$Res> extends _$RegisterEventCopyWithImpl<$Res>
-    implements _$$_StartedCopyWith<$Res> {
-  __$$_StartedCopyWithImpl(_$_Started _value, $Res Function(_$_Started) _then)
-      : super(_value, (v) => _then(v as _$_Started));
-
-  @override
-  _$_Started get _value => super._value as _$_Started;
+class __$$StartedImplCopyWithImpl<$Res>
+    extends _$RegisterEventCopyWithImpl<$Res, _$StartedImpl>
+    implements _$$StartedImplCopyWith<$Res> {
+  __$$StartedImplCopyWithImpl(
+      _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Started implements _Started {
-  const _$_Started();
+class _$StartedImpl implements _Started {
+  const _$StartedImpl();
 
   @override
   String toString() {
@@ -115,7 +115,7 @@ class _$_Started implements _Started {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Started);
+        (other.runtimeType == runtimeType && other is _$StartedImpl);
   }
 
   @override
@@ -135,10 +135,10 @@ class _$_Started implements _Started {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String buttonType)? click,
-    TResult Function(String fieldKey, String? value)? fieldChanged,
-    TResult Function(bool conditionCheck)? submit,
+    TResult? Function()? started,
+    TResult? Function(String buttonType)? click,
+    TResult? Function(String fieldKey, String? value)? fieldChanged,
+    TResult? Function(bool conditionCheck)? submit,
   }) {
     return started?.call();
   }
@@ -172,10 +172,10 @@ class _$_Started implements _Started {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(Click value)? click,
-    TResult Function(FieldChanged value)? fieldChanged,
-    TResult Function(Submit value)? submit,
+    TResult? Function(_Started value)? started,
+    TResult? Function(Click value)? click,
+    TResult? Function(FieldChanged value)? fieldChanged,
+    TResult? Function(Submit value)? submit,
   }) {
     return started?.call(this);
   }
@@ -197,31 +197,33 @@ class _$_Started implements _Started {
 }
 
 abstract class _Started implements RegisterEvent {
-  const factory _Started() = _$_Started;
+  const factory _Started() = _$StartedImpl;
 }
 
 /// @nodoc
-abstract class _$$ClickCopyWith<$Res> {
-  factory _$$ClickCopyWith(_$Click value, $Res Function(_$Click) then) =
-      __$$ClickCopyWithImpl<$Res>;
+abstract class _$$ClickImplCopyWith<$Res> {
+  factory _$$ClickImplCopyWith(
+          _$ClickImpl value, $Res Function(_$ClickImpl) then) =
+      __$$ClickImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String buttonType});
 }
 
 /// @nodoc
-class __$$ClickCopyWithImpl<$Res> extends _$RegisterEventCopyWithImpl<$Res>
-    implements _$$ClickCopyWith<$Res> {
-  __$$ClickCopyWithImpl(_$Click _value, $Res Function(_$Click) _then)
-      : super(_value, (v) => _then(v as _$Click));
+class __$$ClickImplCopyWithImpl<$Res>
+    extends _$RegisterEventCopyWithImpl<$Res, _$ClickImpl>
+    implements _$$ClickImplCopyWith<$Res> {
+  __$$ClickImplCopyWithImpl(
+      _$ClickImpl _value, $Res Function(_$ClickImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$Click get _value => super._value as _$Click;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? buttonType = freezed,
+    Object? buttonType = null,
   }) {
-    return _then(_$Click(
-      buttonType == freezed
+    return _then(_$ClickImpl(
+      null == buttonType
           ? _value.buttonType
           : buttonType // ignore: cast_nullable_to_non_nullable
               as String,
@@ -231,8 +233,8 @@ class __$$ClickCopyWithImpl<$Res> extends _$RegisterEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Click implements Click {
-  const _$Click(this.buttonType);
+class _$ClickImpl implements Click {
+  const _$ClickImpl(this.buttonType);
 
   @override
   final String buttonType;
@@ -246,19 +248,19 @@ class _$Click implements Click {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$Click &&
-            const DeepCollectionEquality()
-                .equals(other.buttonType, buttonType));
+            other is _$ClickImpl &&
+            (identical(other.buttonType, buttonType) ||
+                other.buttonType == buttonType));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(buttonType));
+  int get hashCode => Object.hash(runtimeType, buttonType);
 
   @JsonKey(ignore: true)
   @override
-  _$$ClickCopyWith<_$Click> get copyWith =>
-      __$$ClickCopyWithImpl<_$Click>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ClickImplCopyWith<_$ClickImpl> get copyWith =>
+      __$$ClickImplCopyWithImpl<_$ClickImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -274,10 +276,10 @@ class _$Click implements Click {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String buttonType)? click,
-    TResult Function(String fieldKey, String? value)? fieldChanged,
-    TResult Function(bool conditionCheck)? submit,
+    TResult? Function()? started,
+    TResult? Function(String buttonType)? click,
+    TResult? Function(String fieldKey, String? value)? fieldChanged,
+    TResult? Function(bool conditionCheck)? submit,
   }) {
     return click?.call(buttonType);
   }
@@ -311,10 +313,10 @@ class _$Click implements Click {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(Click value)? click,
-    TResult Function(FieldChanged value)? fieldChanged,
-    TResult Function(Submit value)? submit,
+    TResult? Function(_Started value)? started,
+    TResult? Function(Click value)? click,
+    TResult? Function(FieldChanged value)? fieldChanged,
+    TResult? Function(Submit value)? submit,
   }) {
     return click?.call(this);
   }
@@ -336,43 +338,43 @@ class _$Click implements Click {
 }
 
 abstract class Click implements RegisterEvent {
-  const factory Click(final String buttonType) = _$Click;
+  const factory Click(final String buttonType) = _$ClickImpl;
 
-  String get buttonType => throw _privateConstructorUsedError;
+  String get buttonType;
   @JsonKey(ignore: true)
-  _$$ClickCopyWith<_$Click> get copyWith => throw _privateConstructorUsedError;
+  _$$ClickImplCopyWith<_$ClickImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FieldChangedCopyWith<$Res> {
-  factory _$$FieldChangedCopyWith(
-          _$FieldChanged value, $Res Function(_$FieldChanged) then) =
-      __$$FieldChangedCopyWithImpl<$Res>;
+abstract class _$$FieldChangedImplCopyWith<$Res> {
+  factory _$$FieldChangedImplCopyWith(
+          _$FieldChangedImpl value, $Res Function(_$FieldChangedImpl) then) =
+      __$$FieldChangedImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String fieldKey, String? value});
 }
 
 /// @nodoc
-class __$$FieldChangedCopyWithImpl<$Res>
-    extends _$RegisterEventCopyWithImpl<$Res>
-    implements _$$FieldChangedCopyWith<$Res> {
-  __$$FieldChangedCopyWithImpl(
-      _$FieldChanged _value, $Res Function(_$FieldChanged) _then)
-      : super(_value, (v) => _then(v as _$FieldChanged));
+class __$$FieldChangedImplCopyWithImpl<$Res>
+    extends _$RegisterEventCopyWithImpl<$Res, _$FieldChangedImpl>
+    implements _$$FieldChangedImplCopyWith<$Res> {
+  __$$FieldChangedImplCopyWithImpl(
+      _$FieldChangedImpl _value, $Res Function(_$FieldChangedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$FieldChanged get _value => super._value as _$FieldChanged;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? fieldKey = freezed,
+    Object? fieldKey = null,
     Object? value = freezed,
   }) {
-    return _then(_$FieldChanged(
-      fieldKey == freezed
+    return _then(_$FieldChangedImpl(
+      null == fieldKey
           ? _value.fieldKey
           : fieldKey // ignore: cast_nullable_to_non_nullable
               as String,
-      value == freezed
+      freezed == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -382,8 +384,8 @@ class __$$FieldChangedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FieldChanged implements FieldChanged {
-  const _$FieldChanged(this.fieldKey, this.value);
+class _$FieldChangedImpl implements FieldChanged {
+  const _$FieldChangedImpl(this.fieldKey, this.value);
 
   @override
   final String fieldKey;
@@ -399,21 +401,20 @@ class _$FieldChanged implements FieldChanged {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FieldChanged &&
-            const DeepCollectionEquality().equals(other.fieldKey, fieldKey) &&
-            const DeepCollectionEquality().equals(other.value, value));
+            other is _$FieldChangedImpl &&
+            (identical(other.fieldKey, fieldKey) ||
+                other.fieldKey == fieldKey) &&
+            (identical(other.value, value) || other.value == value));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(fieldKey),
-      const DeepCollectionEquality().hash(value));
+  int get hashCode => Object.hash(runtimeType, fieldKey, value);
 
   @JsonKey(ignore: true)
   @override
-  _$$FieldChangedCopyWith<_$FieldChanged> get copyWith =>
-      __$$FieldChangedCopyWithImpl<_$FieldChanged>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FieldChangedImplCopyWith<_$FieldChangedImpl> get copyWith =>
+      __$$FieldChangedImplCopyWithImpl<_$FieldChangedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -429,10 +430,10 @@ class _$FieldChanged implements FieldChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String buttonType)? click,
-    TResult Function(String fieldKey, String? value)? fieldChanged,
-    TResult Function(bool conditionCheck)? submit,
+    TResult? Function()? started,
+    TResult? Function(String buttonType)? click,
+    TResult? Function(String fieldKey, String? value)? fieldChanged,
+    TResult? Function(bool conditionCheck)? submit,
   }) {
     return fieldChanged?.call(fieldKey, value);
   }
@@ -466,10 +467,10 @@ class _$FieldChanged implements FieldChanged {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(Click value)? click,
-    TResult Function(FieldChanged value)? fieldChanged,
-    TResult Function(Submit value)? submit,
+    TResult? Function(_Started value)? started,
+    TResult? Function(Click value)? click,
+    TResult? Function(FieldChanged value)? fieldChanged,
+    TResult? Function(Submit value)? submit,
   }) {
     return fieldChanged?.call(this);
   }
@@ -492,37 +493,39 @@ class _$FieldChanged implements FieldChanged {
 
 abstract class FieldChanged implements RegisterEvent {
   const factory FieldChanged(final String fieldKey, final String? value) =
-      _$FieldChanged;
+      _$FieldChangedImpl;
 
-  String get fieldKey => throw _privateConstructorUsedError;
-  String? get value => throw _privateConstructorUsedError;
+  String get fieldKey;
+  String? get value;
   @JsonKey(ignore: true)
-  _$$FieldChangedCopyWith<_$FieldChanged> get copyWith =>
+  _$$FieldChangedImplCopyWith<_$FieldChangedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$SubmitCopyWith<$Res> {
-  factory _$$SubmitCopyWith(_$Submit value, $Res Function(_$Submit) then) =
-      __$$SubmitCopyWithImpl<$Res>;
+abstract class _$$SubmitImplCopyWith<$Res> {
+  factory _$$SubmitImplCopyWith(
+          _$SubmitImpl value, $Res Function(_$SubmitImpl) then) =
+      __$$SubmitImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({bool conditionCheck});
 }
 
 /// @nodoc
-class __$$SubmitCopyWithImpl<$Res> extends _$RegisterEventCopyWithImpl<$Res>
-    implements _$$SubmitCopyWith<$Res> {
-  __$$SubmitCopyWithImpl(_$Submit _value, $Res Function(_$Submit) _then)
-      : super(_value, (v) => _then(v as _$Submit));
+class __$$SubmitImplCopyWithImpl<$Res>
+    extends _$RegisterEventCopyWithImpl<$Res, _$SubmitImpl>
+    implements _$$SubmitImplCopyWith<$Res> {
+  __$$SubmitImplCopyWithImpl(
+      _$SubmitImpl _value, $Res Function(_$SubmitImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$Submit get _value => super._value as _$Submit;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? conditionCheck = freezed,
+    Object? conditionCheck = null,
   }) {
-    return _then(_$Submit(
-      conditionCheck == freezed
+    return _then(_$SubmitImpl(
+      null == conditionCheck
           ? _value.conditionCheck
           : conditionCheck // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -532,8 +535,8 @@ class __$$SubmitCopyWithImpl<$Res> extends _$RegisterEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Submit implements Submit {
-  const _$Submit(this.conditionCheck);
+class _$SubmitImpl implements Submit {
+  const _$SubmitImpl(this.conditionCheck);
 
   @override
   final bool conditionCheck;
@@ -547,19 +550,19 @@ class _$Submit implements Submit {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$Submit &&
-            const DeepCollectionEquality()
-                .equals(other.conditionCheck, conditionCheck));
+            other is _$SubmitImpl &&
+            (identical(other.conditionCheck, conditionCheck) ||
+                other.conditionCheck == conditionCheck));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(conditionCheck));
+  int get hashCode => Object.hash(runtimeType, conditionCheck);
 
   @JsonKey(ignore: true)
   @override
-  _$$SubmitCopyWith<_$Submit> get copyWith =>
-      __$$SubmitCopyWithImpl<_$Submit>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SubmitImplCopyWith<_$SubmitImpl> get copyWith =>
+      __$$SubmitImplCopyWithImpl<_$SubmitImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -575,10 +578,10 @@ class _$Submit implements Submit {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String buttonType)? click,
-    TResult Function(String fieldKey, String? value)? fieldChanged,
-    TResult Function(bool conditionCheck)? submit,
+    TResult? Function()? started,
+    TResult? Function(String buttonType)? click,
+    TResult? Function(String fieldKey, String? value)? fieldChanged,
+    TResult? Function(bool conditionCheck)? submit,
   }) {
     return submit?.call(conditionCheck);
   }
@@ -612,10 +615,10 @@ class _$Submit implements Submit {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(Click value)? click,
-    TResult Function(FieldChanged value)? fieldChanged,
-    TResult Function(Submit value)? submit,
+    TResult? Function(_Started value)? started,
+    TResult? Function(Click value)? click,
+    TResult? Function(FieldChanged value)? fieldChanged,
+    TResult? Function(Submit value)? submit,
   }) {
     return submit?.call(this);
   }
@@ -637,11 +640,11 @@ class _$Submit implements Submit {
 }
 
 abstract class Submit implements RegisterEvent {
-  const factory Submit(final bool conditionCheck) = _$Submit;
+  const factory Submit(final bool conditionCheck) = _$SubmitImpl;
 
-  bool get conditionCheck => throw _privateConstructorUsedError;
+  bool get conditionCheck;
   @JsonKey(ignore: true)
-  _$$SubmitCopyWith<_$Submit> get copyWith =>
+  _$$SubmitImplCopyWith<_$SubmitImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -666,7 +669,8 @@ mixin _$RegisterState {
 abstract class $RegisterStateCopyWith<$Res> {
   factory $RegisterStateCopyWith(
           RegisterState value, $Res Function(RegisterState) then) =
-      _$RegisterStateCopyWithImpl<$Res>;
+      _$RegisterStateCopyWithImpl<$Res, RegisterState>;
+  @useResult
   $Res call(
       {UserCreate? userCreate,
       String fieldKey,
@@ -679,69 +683,72 @@ abstract class $RegisterStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$RegisterStateCopyWithImpl<$Res>
+class _$RegisterStateCopyWithImpl<$Res, $Val extends RegisterState>
     implements $RegisterStateCopyWith<$Res> {
   _$RegisterStateCopyWithImpl(this._value, this._then);
 
-  final RegisterState _value;
   // ignore: unused_field
-  final $Res Function(RegisterState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? userCreate = freezed,
-    Object? fieldKey = freezed,
-    Object? showErrorMessages = freezed,
-    Object? isSubmitting = freezed,
-    Object? isSubmitable = freezed,
+    Object? fieldKey = null,
+    Object? showErrorMessages = null,
+    Object? isSubmitting = null,
+    Object? isSubmitable = null,
     Object? errorMessage = freezed,
-    Object? clickType = freezed,
-    Object? authFailureOrSuccessOption = freezed,
+    Object? clickType = null,
+    Object? authFailureOrSuccessOption = null,
   }) {
     return _then(_value.copyWith(
-      userCreate: userCreate == freezed
+      userCreate: freezed == userCreate
           ? _value.userCreate
           : userCreate // ignore: cast_nullable_to_non_nullable
               as UserCreate?,
-      fieldKey: fieldKey == freezed
+      fieldKey: null == fieldKey
           ? _value.fieldKey
           : fieldKey // ignore: cast_nullable_to_non_nullable
               as String,
-      showErrorMessages: showErrorMessages == freezed
+      showErrorMessages: null == showErrorMessages
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSubmitting: isSubmitting == freezed
+      isSubmitting: null == isSubmitting
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSubmitable: isSubmitable == freezed
+      isSubmitable: null == isSubmitable
           ? _value.isSubmitable
           : isSubmitable // ignore: cast_nullable_to_non_nullable
               as bool,
-      errorMessage: errorMessage == freezed
+      errorMessage: freezed == errorMessage
           ? _value.errorMessage
           : errorMessage // ignore: cast_nullable_to_non_nullable
               as String?,
-      clickType: clickType == freezed
+      clickType: null == clickType
           ? _value.clickType
           : clickType // ignore: cast_nullable_to_non_nullable
               as String,
-      authFailureOrSuccessOption: authFailureOrSuccessOption == freezed
+      authFailureOrSuccessOption: null == authFailureOrSuccessOption
           ? _value.authFailureOrSuccessOption
           : authFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
               as Option<Either<AuthFailure, Unit>>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_RegisterStateCopyWith<$Res>
+abstract class _$$RegisterStateImplCopyWith<$Res>
     implements $RegisterStateCopyWith<$Res> {
-  factory _$$_RegisterStateCopyWith(
-          _$_RegisterState value, $Res Function(_$_RegisterState) then) =
-      __$$_RegisterStateCopyWithImpl<$Res>;
+  factory _$$RegisterStateImplCopyWith(
+          _$RegisterStateImpl value, $Res Function(_$RegisterStateImpl) then) =
+      __$$RegisterStateImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {UserCreate? userCreate,
       String fieldKey,
@@ -754,57 +761,55 @@ abstract class _$$_RegisterStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_RegisterStateCopyWithImpl<$Res>
-    extends _$RegisterStateCopyWithImpl<$Res>
-    implements _$$_RegisterStateCopyWith<$Res> {
-  __$$_RegisterStateCopyWithImpl(
-      _$_RegisterState _value, $Res Function(_$_RegisterState) _then)
-      : super(_value, (v) => _then(v as _$_RegisterState));
+class __$$RegisterStateImplCopyWithImpl<$Res>
+    extends _$RegisterStateCopyWithImpl<$Res, _$RegisterStateImpl>
+    implements _$$RegisterStateImplCopyWith<$Res> {
+  __$$RegisterStateImplCopyWithImpl(
+      _$RegisterStateImpl _value, $Res Function(_$RegisterStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_RegisterState get _value => super._value as _$_RegisterState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? userCreate = freezed,
-    Object? fieldKey = freezed,
-    Object? showErrorMessages = freezed,
-    Object? isSubmitting = freezed,
-    Object? isSubmitable = freezed,
+    Object? fieldKey = null,
+    Object? showErrorMessages = null,
+    Object? isSubmitting = null,
+    Object? isSubmitable = null,
     Object? errorMessage = freezed,
-    Object? clickType = freezed,
-    Object? authFailureOrSuccessOption = freezed,
+    Object? clickType = null,
+    Object? authFailureOrSuccessOption = null,
   }) {
-    return _then(_$_RegisterState(
-      userCreate: userCreate == freezed
+    return _then(_$RegisterStateImpl(
+      userCreate: freezed == userCreate
           ? _value.userCreate
           : userCreate // ignore: cast_nullable_to_non_nullable
               as UserCreate?,
-      fieldKey: fieldKey == freezed
+      fieldKey: null == fieldKey
           ? _value.fieldKey
           : fieldKey // ignore: cast_nullable_to_non_nullable
               as String,
-      showErrorMessages: showErrorMessages == freezed
+      showErrorMessages: null == showErrorMessages
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSubmitting: isSubmitting == freezed
+      isSubmitting: null == isSubmitting
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSubmitable: isSubmitable == freezed
+      isSubmitable: null == isSubmitable
           ? _value.isSubmitable
           : isSubmitable // ignore: cast_nullable_to_non_nullable
               as bool,
-      errorMessage: errorMessage == freezed
+      errorMessage: freezed == errorMessage
           ? _value.errorMessage
           : errorMessage // ignore: cast_nullable_to_non_nullable
               as String?,
-      clickType: clickType == freezed
+      clickType: null == clickType
           ? _value.clickType
           : clickType // ignore: cast_nullable_to_non_nullable
               as String,
-      authFailureOrSuccessOption: authFailureOrSuccessOption == freezed
+      authFailureOrSuccessOption: null == authFailureOrSuccessOption
           ? _value.authFailureOrSuccessOption
           : authFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
               as Option<Either<AuthFailure, Unit>>,
@@ -814,8 +819,8 @@ class __$$_RegisterStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_RegisterState implements _RegisterState {
-  const _$_RegisterState(
+class _$RegisterStateImpl implements _RegisterState {
+  const _$RegisterStateImpl(
       {required this.userCreate,
       required this.fieldKey,
       required this.showErrorMessages,
@@ -851,39 +856,44 @@ class _$_RegisterState implements _RegisterState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RegisterState &&
-            const DeepCollectionEquality()
-                .equals(other.userCreate, userCreate) &&
-            const DeepCollectionEquality().equals(other.fieldKey, fieldKey) &&
-            const DeepCollectionEquality()
-                .equals(other.showErrorMessages, showErrorMessages) &&
-            const DeepCollectionEquality()
-                .equals(other.isSubmitting, isSubmitting) &&
-            const DeepCollectionEquality()
-                .equals(other.isSubmitable, isSubmitable) &&
-            const DeepCollectionEquality()
-                .equals(other.errorMessage, errorMessage) &&
-            const DeepCollectionEquality().equals(other.clickType, clickType) &&
-            const DeepCollectionEquality().equals(
-                other.authFailureOrSuccessOption, authFailureOrSuccessOption));
+            other is _$RegisterStateImpl &&
+            (identical(other.userCreate, userCreate) ||
+                other.userCreate == userCreate) &&
+            (identical(other.fieldKey, fieldKey) ||
+                other.fieldKey == fieldKey) &&
+            (identical(other.showErrorMessages, showErrorMessages) ||
+                other.showErrorMessages == showErrorMessages) &&
+            (identical(other.isSubmitting, isSubmitting) ||
+                other.isSubmitting == isSubmitting) &&
+            (identical(other.isSubmitable, isSubmitable) ||
+                other.isSubmitable == isSubmitable) &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage) &&
+            (identical(other.clickType, clickType) ||
+                other.clickType == clickType) &&
+            (identical(other.authFailureOrSuccessOption,
+                    authFailureOrSuccessOption) ||
+                other.authFailureOrSuccessOption ==
+                    authFailureOrSuccessOption));
   }
 
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(userCreate),
-      const DeepCollectionEquality().hash(fieldKey),
-      const DeepCollectionEquality().hash(showErrorMessages),
-      const DeepCollectionEquality().hash(isSubmitting),
-      const DeepCollectionEquality().hash(isSubmitable),
-      const DeepCollectionEquality().hash(errorMessage),
-      const DeepCollectionEquality().hash(clickType),
-      const DeepCollectionEquality().hash(authFailureOrSuccessOption));
+      userCreate,
+      fieldKey,
+      showErrorMessages,
+      isSubmitting,
+      isSubmitable,
+      errorMessage,
+      clickType,
+      authFailureOrSuccessOption);
 
   @JsonKey(ignore: true)
   @override
-  _$$_RegisterStateCopyWith<_$_RegisterState> get copyWith =>
-      __$$_RegisterStateCopyWithImpl<_$_RegisterState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$RegisterStateImplCopyWith<_$RegisterStateImpl> get copyWith =>
+      __$$RegisterStateImplCopyWithImpl<_$RegisterStateImpl>(this, _$identity);
 }
 
 abstract class _RegisterState implements RegisterState {
@@ -896,27 +906,26 @@ abstract class _RegisterState implements RegisterState {
       required final String? errorMessage,
       required final String clickType,
       required final Option<Either<AuthFailure, Unit>>
-          authFailureOrSuccessOption}) = _$_RegisterState;
+          authFailureOrSuccessOption}) = _$RegisterStateImpl;
 
   @override
-  UserCreate? get userCreate => throw _privateConstructorUsedError;
+  UserCreate? get userCreate;
   @override
-  String get fieldKey => throw _privateConstructorUsedError;
+  String get fieldKey;
   @override
-  bool get showErrorMessages => throw _privateConstructorUsedError;
+  bool get showErrorMessages;
   @override
-  bool get isSubmitting => throw _privateConstructorUsedError;
+  bool get isSubmitting;
   @override
-  bool get isSubmitable => throw _privateConstructorUsedError;
+  bool get isSubmitable;
   @override
-  String? get errorMessage => throw _privateConstructorUsedError;
+  String? get errorMessage;
   @override
-  String get clickType => throw _privateConstructorUsedError;
+  String get clickType;
   @override
-  Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption =>
-      throw _privateConstructorUsedError;
+  Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption;
   @override
   @JsonKey(ignore: true)
-  _$$_RegisterStateCopyWith<_$_RegisterState> get copyWith =>
+  _$$RegisterStateImplCopyWith<_$RegisterStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

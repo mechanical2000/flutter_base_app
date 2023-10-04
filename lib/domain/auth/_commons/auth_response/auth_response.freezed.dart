@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'auth_response.dart';
 
@@ -28,56 +28,62 @@ mixin _$AuthResponse {
 abstract class $AuthResponseCopyWith<$Res> {
   factory $AuthResponseCopyWith(
           AuthResponse value, $Res Function(AuthResponse) then) =
-      _$AuthResponseCopyWithImpl<$Res>;
+      _$AuthResponseCopyWithImpl<$Res, AuthResponse>;
+  @useResult
   $Res call({User? user, String? token});
 
   $UserCopyWith<$Res>? get user;
 }
 
 /// @nodoc
-class _$AuthResponseCopyWithImpl<$Res> implements $AuthResponseCopyWith<$Res> {
+class _$AuthResponseCopyWithImpl<$Res, $Val extends AuthResponse>
+    implements $AuthResponseCopyWith<$Res> {
   _$AuthResponseCopyWithImpl(this._value, this._then);
 
-  final AuthResponse _value;
   // ignore: unused_field
-  final $Res Function(AuthResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? user = freezed,
     Object? token = freezed,
   }) {
     return _then(_value.copyWith(
-      user: user == freezed
+      user: freezed == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as User?,
-      token: token == freezed
+      token: freezed == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UserCopyWith<$Res>? get user {
     if (_value.user == null) {
       return null;
     }
 
     return $UserCopyWith<$Res>(_value.user!, (value) {
-      return _then(_value.copyWith(user: value));
+      return _then(_value.copyWith(user: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_AuthResponseCopyWith<$Res>
+abstract class _$$AuthResponseImplCopyWith<$Res>
     implements $AuthResponseCopyWith<$Res> {
-  factory _$$_AuthResponseCopyWith(
-          _$_AuthResponse value, $Res Function(_$_AuthResponse) then) =
-      __$$_AuthResponseCopyWithImpl<$Res>;
+  factory _$$AuthResponseImplCopyWith(
+          _$AuthResponseImpl value, $Res Function(_$AuthResponseImpl) then) =
+      __$$AuthResponseImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({User? user, String? token});
 
   @override
@@ -85,27 +91,25 @@ abstract class _$$_AuthResponseCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_AuthResponseCopyWithImpl<$Res>
-    extends _$AuthResponseCopyWithImpl<$Res>
-    implements _$$_AuthResponseCopyWith<$Res> {
-  __$$_AuthResponseCopyWithImpl(
-      _$_AuthResponse _value, $Res Function(_$_AuthResponse) _then)
-      : super(_value, (v) => _then(v as _$_AuthResponse));
+class __$$AuthResponseImplCopyWithImpl<$Res>
+    extends _$AuthResponseCopyWithImpl<$Res, _$AuthResponseImpl>
+    implements _$$AuthResponseImplCopyWith<$Res> {
+  __$$AuthResponseImplCopyWithImpl(
+      _$AuthResponseImpl _value, $Res Function(_$AuthResponseImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_AuthResponse get _value => super._value as _$_AuthResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? user = freezed,
     Object? token = freezed,
   }) {
-    return _then(_$_AuthResponse(
-      user: user == freezed
+    return _then(_$AuthResponseImpl(
+      user: freezed == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as User?,
-      token: token == freezed
+      token: freezed == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -115,8 +119,8 @@ class __$$_AuthResponseCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AuthResponse implements _AuthResponse {
-  const _$_AuthResponse({required this.user, required this.token});
+class _$AuthResponseImpl implements _AuthResponse {
+  const _$AuthResponseImpl({required this.user, required this.token});
 
   @override
   final User? user;
@@ -132,34 +136,32 @@ class _$_AuthResponse implements _AuthResponse {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AuthResponse &&
-            const DeepCollectionEquality().equals(other.user, user) &&
-            const DeepCollectionEquality().equals(other.token, token));
+            other is _$AuthResponseImpl &&
+            (identical(other.user, user) || other.user == user) &&
+            (identical(other.token, token) || other.token == token));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(user),
-      const DeepCollectionEquality().hash(token));
+  int get hashCode => Object.hash(runtimeType, user, token);
 
   @JsonKey(ignore: true)
   @override
-  _$$_AuthResponseCopyWith<_$_AuthResponse> get copyWith =>
-      __$$_AuthResponseCopyWithImpl<_$_AuthResponse>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AuthResponseImplCopyWith<_$AuthResponseImpl> get copyWith =>
+      __$$AuthResponseImplCopyWithImpl<_$AuthResponseImpl>(this, _$identity);
 }
 
 abstract class _AuthResponse implements AuthResponse {
   const factory _AuthResponse(
       {required final User? user,
-      required final String? token}) = _$_AuthResponse;
+      required final String? token}) = _$AuthResponseImpl;
 
   @override
-  User? get user => throw _privateConstructorUsedError;
+  User? get user;
   @override
-  String? get token => throw _privateConstructorUsedError;
+  String? get token;
   @override
   @JsonKey(ignore: true)
-  _$$_AuthResponseCopyWith<_$_AuthResponse> get copyWith =>
+  _$$AuthResponseImplCopyWith<_$AuthResponseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

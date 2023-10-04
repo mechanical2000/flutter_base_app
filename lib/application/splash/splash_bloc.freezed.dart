@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'splash_bloc.dart';
 
@@ -28,7 +28,7 @@ mixin _$SplashEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int splashTime, String currentLangue, bool? withDeepLink)?
+    TResult? Function(int splashTime, String currentLangue, bool? withDeepLink)?
         startLoading,
   }) =>
       throw _privateConstructorUsedError;
@@ -46,7 +46,7 @@ mixin _$SplashEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(StartLoading value)? startLoading,
+    TResult? Function(StartLoading value)? startLoading,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -65,77 +65,81 @@ mixin _$SplashEvent {
 abstract class $SplashEventCopyWith<$Res> {
   factory $SplashEventCopyWith(
           SplashEvent value, $Res Function(SplashEvent) then) =
-      _$SplashEventCopyWithImpl<$Res>;
+      _$SplashEventCopyWithImpl<$Res, SplashEvent>;
+  @useResult
   $Res call({int splashTime, String currentLangue, bool? withDeepLink});
 }
 
 /// @nodoc
-class _$SplashEventCopyWithImpl<$Res> implements $SplashEventCopyWith<$Res> {
+class _$SplashEventCopyWithImpl<$Res, $Val extends SplashEvent>
+    implements $SplashEventCopyWith<$Res> {
   _$SplashEventCopyWithImpl(this._value, this._then);
 
-  final SplashEvent _value;
   // ignore: unused_field
-  final $Res Function(SplashEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? splashTime = freezed,
-    Object? currentLangue = freezed,
+    Object? splashTime = null,
+    Object? currentLangue = null,
     Object? withDeepLink = freezed,
   }) {
     return _then(_value.copyWith(
-      splashTime: splashTime == freezed
+      splashTime: null == splashTime
           ? _value.splashTime
           : splashTime // ignore: cast_nullable_to_non_nullable
               as int,
-      currentLangue: currentLangue == freezed
+      currentLangue: null == currentLangue
           ? _value.currentLangue
           : currentLangue // ignore: cast_nullable_to_non_nullable
               as String,
-      withDeepLink: withDeepLink == freezed
+      withDeepLink: freezed == withDeepLink
           ? _value.withDeepLink
           : withDeepLink // ignore: cast_nullable_to_non_nullable
               as bool?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$StartLoadingCopyWith<$Res>
+abstract class _$$StartLoadingImplCopyWith<$Res>
     implements $SplashEventCopyWith<$Res> {
-  factory _$$StartLoadingCopyWith(
-          _$StartLoading value, $Res Function(_$StartLoading) then) =
-      __$$StartLoadingCopyWithImpl<$Res>;
+  factory _$$StartLoadingImplCopyWith(
+          _$StartLoadingImpl value, $Res Function(_$StartLoadingImpl) then) =
+      __$$StartLoadingImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int splashTime, String currentLangue, bool? withDeepLink});
 }
 
 /// @nodoc
-class __$$StartLoadingCopyWithImpl<$Res> extends _$SplashEventCopyWithImpl<$Res>
-    implements _$$StartLoadingCopyWith<$Res> {
-  __$$StartLoadingCopyWithImpl(
-      _$StartLoading _value, $Res Function(_$StartLoading) _then)
-      : super(_value, (v) => _then(v as _$StartLoading));
+class __$$StartLoadingImplCopyWithImpl<$Res>
+    extends _$SplashEventCopyWithImpl<$Res, _$StartLoadingImpl>
+    implements _$$StartLoadingImplCopyWith<$Res> {
+  __$$StartLoadingImplCopyWithImpl(
+      _$StartLoadingImpl _value, $Res Function(_$StartLoadingImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$StartLoading get _value => super._value as _$StartLoading;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? splashTime = freezed,
-    Object? currentLangue = freezed,
+    Object? splashTime = null,
+    Object? currentLangue = null,
     Object? withDeepLink = freezed,
   }) {
-    return _then(_$StartLoading(
-      splashTime == freezed
+    return _then(_$StartLoadingImpl(
+      null == splashTime
           ? _value.splashTime
           : splashTime // ignore: cast_nullable_to_non_nullable
               as int,
-      currentLangue == freezed
+      null == currentLangue
           ? _value.currentLangue
           : currentLangue // ignore: cast_nullable_to_non_nullable
               as String,
-      withDeepLink == freezed
+      freezed == withDeepLink
           ? _value.withDeepLink
           : withDeepLink // ignore: cast_nullable_to_non_nullable
               as bool?,
@@ -145,8 +149,9 @@ class __$$StartLoadingCopyWithImpl<$Res> extends _$SplashEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$StartLoading implements StartLoading {
-  const _$StartLoading(this.splashTime, this.currentLangue, this.withDeepLink);
+class _$StartLoadingImpl implements StartLoading {
+  const _$StartLoadingImpl(
+      this.splashTime, this.currentLangue, this.withDeepLink);
 
   @override
   final int splashTime;
@@ -164,26 +169,24 @@ class _$StartLoading implements StartLoading {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$StartLoading &&
-            const DeepCollectionEquality()
-                .equals(other.splashTime, splashTime) &&
-            const DeepCollectionEquality()
-                .equals(other.currentLangue, currentLangue) &&
-            const DeepCollectionEquality()
-                .equals(other.withDeepLink, withDeepLink));
+            other is _$StartLoadingImpl &&
+            (identical(other.splashTime, splashTime) ||
+                other.splashTime == splashTime) &&
+            (identical(other.currentLangue, currentLangue) ||
+                other.currentLangue == currentLangue) &&
+            (identical(other.withDeepLink, withDeepLink) ||
+                other.withDeepLink == withDeepLink));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(splashTime),
-      const DeepCollectionEquality().hash(currentLangue),
-      const DeepCollectionEquality().hash(withDeepLink));
+  int get hashCode =>
+      Object.hash(runtimeType, splashTime, currentLangue, withDeepLink);
 
   @JsonKey(ignore: true)
   @override
-  _$$StartLoadingCopyWith<_$StartLoading> get copyWith =>
-      __$$StartLoadingCopyWithImpl<_$StartLoading>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$StartLoadingImplCopyWith<_$StartLoadingImpl> get copyWith =>
+      __$$StartLoadingImplCopyWithImpl<_$StartLoadingImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -198,7 +201,7 @@ class _$StartLoading implements StartLoading {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int splashTime, String currentLangue, bool? withDeepLink)?
+    TResult? Function(int splashTime, String currentLangue, bool? withDeepLink)?
         startLoading,
   }) {
     return startLoading?.call(splashTime, currentLangue, withDeepLink);
@@ -228,7 +231,7 @@ class _$StartLoading implements StartLoading {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(StartLoading value)? startLoading,
+    TResult? Function(StartLoading value)? startLoading,
   }) {
     return startLoading?.call(this);
   }
@@ -248,17 +251,17 @@ class _$StartLoading implements StartLoading {
 
 abstract class StartLoading implements SplashEvent {
   const factory StartLoading(final int splashTime, final String currentLangue,
-      final bool? withDeepLink) = _$StartLoading;
+      final bool? withDeepLink) = _$StartLoadingImpl;
 
   @override
-  int get splashTime => throw _privateConstructorUsedError;
+  int get splashTime;
   @override
-  String get currentLangue => throw _privateConstructorUsedError;
+  String get currentLangue;
   @override
-  bool? get withDeepLink => throw _privateConstructorUsedError;
+  bool? get withDeepLink;
   @override
   @JsonKey(ignore: true)
-  _$$StartLoadingCopyWith<_$StartLoading> get copyWith =>
+  _$$StartLoadingImplCopyWith<_$StartLoadingImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -273,8 +276,8 @@ mixin _$SplashState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? loading,
-    TResult Function(bool isLogin, PageRouteInfo<dynamic> route)? loaded,
+    TResult? Function()? loading,
+    TResult? Function(bool isLogin, PageRouteInfo<dynamic> route)? loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -292,8 +295,8 @@ mixin _$SplashState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Loading value)? loading,
-    TResult Function(Loaded value)? loaded,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Loaded value)? loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -309,38 +312,40 @@ mixin _$SplashState {
 abstract class $SplashStateCopyWith<$Res> {
   factory $SplashStateCopyWith(
           SplashState value, $Res Function(SplashState) then) =
-      _$SplashStateCopyWithImpl<$Res>;
+      _$SplashStateCopyWithImpl<$Res, SplashState>;
 }
 
 /// @nodoc
-class _$SplashStateCopyWithImpl<$Res> implements $SplashStateCopyWith<$Res> {
+class _$SplashStateCopyWithImpl<$Res, $Val extends SplashState>
+    implements $SplashStateCopyWith<$Res> {
   _$SplashStateCopyWithImpl(this._value, this._then);
 
-  final SplashState _value;
   // ignore: unused_field
-  final $Res Function(SplashState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$LoadingCopyWith<$Res> {
-  factory _$$LoadingCopyWith(_$Loading value, $Res Function(_$Loading) then) =
-      __$$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingImplCopyWith<$Res> {
+  factory _$$LoadingImplCopyWith(
+          _$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
+      __$$LoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$LoadingCopyWithImpl<$Res> extends _$SplashStateCopyWithImpl<$Res>
-    implements _$$LoadingCopyWith<$Res> {
-  __$$LoadingCopyWithImpl(_$Loading _value, $Res Function(_$Loading) _then)
-      : super(_value, (v) => _then(v as _$Loading));
-
-  @override
-  _$Loading get _value => super._value as _$Loading;
+class __$$LoadingImplCopyWithImpl<$Res>
+    extends _$SplashStateCopyWithImpl<$Res, _$LoadingImpl>
+    implements _$$LoadingImplCopyWith<$Res> {
+  __$$LoadingImplCopyWithImpl(
+      _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Loading implements Loading {
-  const _$Loading();
+class _$LoadingImpl implements Loading {
+  const _$LoadingImpl();
 
   @override
   String toString() {
@@ -350,7 +355,7 @@ class _$Loading implements Loading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Loading);
+        (other.runtimeType == runtimeType && other is _$LoadingImpl);
   }
 
   @override
@@ -369,8 +374,8 @@ class _$Loading implements Loading {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? loading,
-    TResult Function(bool isLogin, PageRouteInfo<dynamic> route)? loaded,
+    TResult? Function()? loading,
+    TResult? Function(bool isLogin, PageRouteInfo<dynamic> route)? loaded,
   }) {
     return loading?.call();
   }
@@ -400,8 +405,8 @@ class _$Loading implements Loading {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Loading value)? loading,
-    TResult Function(Loaded value)? loaded,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Loaded value)? loaded,
   }) {
     return loading?.call(this);
   }
@@ -421,36 +426,38 @@ class _$Loading implements Loading {
 }
 
 abstract class Loading implements SplashState {
-  const factory Loading() = _$Loading;
+  const factory Loading() = _$LoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$LoadedCopyWith<$Res> {
-  factory _$$LoadedCopyWith(_$Loaded value, $Res Function(_$Loaded) then) =
-      __$$LoadedCopyWithImpl<$Res>;
+abstract class _$$LoadedImplCopyWith<$Res> {
+  factory _$$LoadedImplCopyWith(
+          _$LoadedImpl value, $Res Function(_$LoadedImpl) then) =
+      __$$LoadedImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({bool isLogin, PageRouteInfo<dynamic> route});
 }
 
 /// @nodoc
-class __$$LoadedCopyWithImpl<$Res> extends _$SplashStateCopyWithImpl<$Res>
-    implements _$$LoadedCopyWith<$Res> {
-  __$$LoadedCopyWithImpl(_$Loaded _value, $Res Function(_$Loaded) _then)
-      : super(_value, (v) => _then(v as _$Loaded));
+class __$$LoadedImplCopyWithImpl<$Res>
+    extends _$SplashStateCopyWithImpl<$Res, _$LoadedImpl>
+    implements _$$LoadedImplCopyWith<$Res> {
+  __$$LoadedImplCopyWithImpl(
+      _$LoadedImpl _value, $Res Function(_$LoadedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$Loaded get _value => super._value as _$Loaded;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? isLogin = freezed,
-    Object? route = freezed,
+    Object? isLogin = null,
+    Object? route = null,
   }) {
-    return _then(_$Loaded(
-      isLogin == freezed
+    return _then(_$LoadedImpl(
+      null == isLogin
           ? _value.isLogin
           : isLogin // ignore: cast_nullable_to_non_nullable
               as bool,
-      route == freezed
+      null == route
           ? _value.route
           : route // ignore: cast_nullable_to_non_nullable
               as PageRouteInfo<dynamic>,
@@ -460,8 +467,8 @@ class __$$LoadedCopyWithImpl<$Res> extends _$SplashStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Loaded implements Loaded {
-  const _$Loaded(this.isLogin, this.route);
+class _$LoadedImpl implements Loaded {
+  const _$LoadedImpl(this.isLogin, this.route);
 
   @override
   final bool isLogin;
@@ -477,21 +484,19 @@ class _$Loaded implements Loaded {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$Loaded &&
-            const DeepCollectionEquality().equals(other.isLogin, isLogin) &&
-            const DeepCollectionEquality().equals(other.route, route));
+            other is _$LoadedImpl &&
+            (identical(other.isLogin, isLogin) || other.isLogin == isLogin) &&
+            (identical(other.route, route) || other.route == route));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(isLogin),
-      const DeepCollectionEquality().hash(route));
+  int get hashCode => Object.hash(runtimeType, isLogin, route);
 
   @JsonKey(ignore: true)
   @override
-  _$$LoadedCopyWith<_$Loaded> get copyWith =>
-      __$$LoadedCopyWithImpl<_$Loaded>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LoadedImplCopyWith<_$LoadedImpl> get copyWith =>
+      __$$LoadedImplCopyWithImpl<_$LoadedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -506,8 +511,8 @@ class _$Loaded implements Loaded {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? loading,
-    TResult Function(bool isLogin, PageRouteInfo<dynamic> route)? loaded,
+    TResult? Function()? loading,
+    TResult? Function(bool isLogin, PageRouteInfo<dynamic> route)? loaded,
   }) {
     return loaded?.call(isLogin, route);
   }
@@ -537,8 +542,8 @@ class _$Loaded implements Loaded {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Loading value)? loading,
-    TResult Function(Loaded value)? loaded,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Loaded value)? loaded,
   }) {
     return loaded?.call(this);
   }
@@ -559,11 +564,11 @@ class _$Loaded implements Loaded {
 
 abstract class Loaded implements SplashState {
   const factory Loaded(final bool isLogin, final PageRouteInfo<dynamic> route) =
-      _$Loaded;
+      _$LoadedImpl;
 
-  bool get isLogin => throw _privateConstructorUsedError;
-  PageRouteInfo<dynamic> get route => throw _privateConstructorUsedError;
+  bool get isLogin;
+  PageRouteInfo<dynamic> get route;
   @JsonKey(ignore: true)
-  _$$LoadedCopyWith<_$Loaded> get copyWith =>
+  _$$LoadedImplCopyWith<_$LoadedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

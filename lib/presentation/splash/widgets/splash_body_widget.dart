@@ -7,13 +7,13 @@ class SplashBodyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
+    return const Stack(
       alignment: Alignment.center,
       fit: StackFit.expand,
       children: [
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
+          children: [
             FlutterLogo(
               textColor: AppColors.primary,
               size: 150.0,

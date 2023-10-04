@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'deep_link_bloc.dart';
 
@@ -25,9 +25,9 @@ mixin _$DeepLinkEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initDeepLinking,
-    TResult Function(Uri link)? addPendingLink,
-    TResult Function()? consumePendingLink,
+    TResult? Function()? initDeepLinking,
+    TResult? Function(Uri link)? addPendingLink,
+    TResult? Function()? consumePendingLink,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -47,9 +47,9 @@ mixin _$DeepLinkEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(InitDeepLinking value)? initDeepLinking,
-    TResult Function(AddPendingLink value)? addPendingLink,
-    TResult Function(ConsumePendingLink value)? consumePendingLink,
+    TResult? Function(InitDeepLinking value)? initDeepLinking,
+    TResult? Function(AddPendingLink value)? addPendingLink,
+    TResult? Function(ConsumePendingLink value)? consumePendingLink,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -66,42 +66,40 @@ mixin _$DeepLinkEvent {
 abstract class $DeepLinkEventCopyWith<$Res> {
   factory $DeepLinkEventCopyWith(
           DeepLinkEvent value, $Res Function(DeepLinkEvent) then) =
-      _$DeepLinkEventCopyWithImpl<$Res>;
+      _$DeepLinkEventCopyWithImpl<$Res, DeepLinkEvent>;
 }
 
 /// @nodoc
-class _$DeepLinkEventCopyWithImpl<$Res>
+class _$DeepLinkEventCopyWithImpl<$Res, $Val extends DeepLinkEvent>
     implements $DeepLinkEventCopyWith<$Res> {
   _$DeepLinkEventCopyWithImpl(this._value, this._then);
 
-  final DeepLinkEvent _value;
   // ignore: unused_field
-  final $Res Function(DeepLinkEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$InitDeepLinkingCopyWith<$Res> {
-  factory _$$InitDeepLinkingCopyWith(
-          _$InitDeepLinking value, $Res Function(_$InitDeepLinking) then) =
-      __$$InitDeepLinkingCopyWithImpl<$Res>;
+abstract class _$$InitDeepLinkingImplCopyWith<$Res> {
+  factory _$$InitDeepLinkingImplCopyWith(_$InitDeepLinkingImpl value,
+          $Res Function(_$InitDeepLinkingImpl) then) =
+      __$$InitDeepLinkingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$InitDeepLinkingCopyWithImpl<$Res>
-    extends _$DeepLinkEventCopyWithImpl<$Res>
-    implements _$$InitDeepLinkingCopyWith<$Res> {
-  __$$InitDeepLinkingCopyWithImpl(
-      _$InitDeepLinking _value, $Res Function(_$InitDeepLinking) _then)
-      : super(_value, (v) => _then(v as _$InitDeepLinking));
-
-  @override
-  _$InitDeepLinking get _value => super._value as _$InitDeepLinking;
+class __$$InitDeepLinkingImplCopyWithImpl<$Res>
+    extends _$DeepLinkEventCopyWithImpl<$Res, _$InitDeepLinkingImpl>
+    implements _$$InitDeepLinkingImplCopyWith<$Res> {
+  __$$InitDeepLinkingImplCopyWithImpl(
+      _$InitDeepLinkingImpl _value, $Res Function(_$InitDeepLinkingImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$InitDeepLinking implements InitDeepLinking {
-  const _$InitDeepLinking();
+class _$InitDeepLinkingImpl implements InitDeepLinking {
+  const _$InitDeepLinkingImpl();
 
   @override
   String toString() {
@@ -111,7 +109,7 @@ class _$InitDeepLinking implements InitDeepLinking {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$InitDeepLinking);
+        (other.runtimeType == runtimeType && other is _$InitDeepLinkingImpl);
   }
 
   @override
@@ -130,9 +128,9 @@ class _$InitDeepLinking implements InitDeepLinking {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initDeepLinking,
-    TResult Function(Uri link)? addPendingLink,
-    TResult Function()? consumePendingLink,
+    TResult? Function()? initDeepLinking,
+    TResult? Function(Uri link)? addPendingLink,
+    TResult? Function()? consumePendingLink,
   }) {
     return initDeepLinking?.call();
   }
@@ -164,9 +162,9 @@ class _$InitDeepLinking implements InitDeepLinking {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(InitDeepLinking value)? initDeepLinking,
-    TResult Function(AddPendingLink value)? addPendingLink,
-    TResult Function(ConsumePendingLink value)? consumePendingLink,
+    TResult? Function(InitDeepLinking value)? initDeepLinking,
+    TResult? Function(AddPendingLink value)? addPendingLink,
+    TResult? Function(ConsumePendingLink value)? consumePendingLink,
   }) {
     return initDeepLinking?.call(this);
   }
@@ -187,34 +185,33 @@ class _$InitDeepLinking implements InitDeepLinking {
 }
 
 abstract class InitDeepLinking implements DeepLinkEvent {
-  const factory InitDeepLinking() = _$InitDeepLinking;
+  const factory InitDeepLinking() = _$InitDeepLinkingImpl;
 }
 
 /// @nodoc
-abstract class _$$AddPendingLinkCopyWith<$Res> {
-  factory _$$AddPendingLinkCopyWith(
-          _$AddPendingLink value, $Res Function(_$AddPendingLink) then) =
-      __$$AddPendingLinkCopyWithImpl<$Res>;
+abstract class _$$AddPendingLinkImplCopyWith<$Res> {
+  factory _$$AddPendingLinkImplCopyWith(_$AddPendingLinkImpl value,
+          $Res Function(_$AddPendingLinkImpl) then) =
+      __$$AddPendingLinkImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({Uri link});
 }
 
 /// @nodoc
-class __$$AddPendingLinkCopyWithImpl<$Res>
-    extends _$DeepLinkEventCopyWithImpl<$Res>
-    implements _$$AddPendingLinkCopyWith<$Res> {
-  __$$AddPendingLinkCopyWithImpl(
-      _$AddPendingLink _value, $Res Function(_$AddPendingLink) _then)
-      : super(_value, (v) => _then(v as _$AddPendingLink));
+class __$$AddPendingLinkImplCopyWithImpl<$Res>
+    extends _$DeepLinkEventCopyWithImpl<$Res, _$AddPendingLinkImpl>
+    implements _$$AddPendingLinkImplCopyWith<$Res> {
+  __$$AddPendingLinkImplCopyWithImpl(
+      _$AddPendingLinkImpl _value, $Res Function(_$AddPendingLinkImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$AddPendingLink get _value => super._value as _$AddPendingLink;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? link = freezed,
+    Object? link = null,
   }) {
-    return _then(_$AddPendingLink(
-      link == freezed
+    return _then(_$AddPendingLinkImpl(
+      null == link
           ? _value.link
           : link // ignore: cast_nullable_to_non_nullable
               as Uri,
@@ -224,8 +221,8 @@ class __$$AddPendingLinkCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$AddPendingLink implements AddPendingLink {
-  const _$AddPendingLink(this.link);
+class _$AddPendingLinkImpl implements AddPendingLink {
+  const _$AddPendingLinkImpl(this.link);
 
   @override
   final Uri link;
@@ -239,18 +236,19 @@ class _$AddPendingLink implements AddPendingLink {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AddPendingLink &&
-            const DeepCollectionEquality().equals(other.link, link));
+            other is _$AddPendingLinkImpl &&
+            (identical(other.link, link) || other.link == link));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(link));
+  int get hashCode => Object.hash(runtimeType, link);
 
   @JsonKey(ignore: true)
   @override
-  _$$AddPendingLinkCopyWith<_$AddPendingLink> get copyWith =>
-      __$$AddPendingLinkCopyWithImpl<_$AddPendingLink>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AddPendingLinkImplCopyWith<_$AddPendingLinkImpl> get copyWith =>
+      __$$AddPendingLinkImplCopyWithImpl<_$AddPendingLinkImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -265,9 +263,9 @@ class _$AddPendingLink implements AddPendingLink {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initDeepLinking,
-    TResult Function(Uri link)? addPendingLink,
-    TResult Function()? consumePendingLink,
+    TResult? Function()? initDeepLinking,
+    TResult? Function(Uri link)? addPendingLink,
+    TResult? Function()? consumePendingLink,
   }) {
     return addPendingLink?.call(link);
   }
@@ -299,9 +297,9 @@ class _$AddPendingLink implements AddPendingLink {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(InitDeepLinking value)? initDeepLinking,
-    TResult Function(AddPendingLink value)? addPendingLink,
-    TResult Function(ConsumePendingLink value)? consumePendingLink,
+    TResult? Function(InitDeepLinking value)? initDeepLinking,
+    TResult? Function(AddPendingLink value)? addPendingLink,
+    TResult? Function(ConsumePendingLink value)? consumePendingLink,
   }) {
     return addPendingLink?.call(this);
   }
@@ -322,37 +320,34 @@ class _$AddPendingLink implements AddPendingLink {
 }
 
 abstract class AddPendingLink implements DeepLinkEvent {
-  const factory AddPendingLink(final Uri link) = _$AddPendingLink;
+  const factory AddPendingLink(final Uri link) = _$AddPendingLinkImpl;
 
-  Uri get link => throw _privateConstructorUsedError;
+  Uri get link;
   @JsonKey(ignore: true)
-  _$$AddPendingLinkCopyWith<_$AddPendingLink> get copyWith =>
+  _$$AddPendingLinkImplCopyWith<_$AddPendingLinkImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ConsumePendingLinkCopyWith<$Res> {
-  factory _$$ConsumePendingLinkCopyWith(_$ConsumePendingLink value,
-          $Res Function(_$ConsumePendingLink) then) =
-      __$$ConsumePendingLinkCopyWithImpl<$Res>;
+abstract class _$$ConsumePendingLinkImplCopyWith<$Res> {
+  factory _$$ConsumePendingLinkImplCopyWith(_$ConsumePendingLinkImpl value,
+          $Res Function(_$ConsumePendingLinkImpl) then) =
+      __$$ConsumePendingLinkImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ConsumePendingLinkCopyWithImpl<$Res>
-    extends _$DeepLinkEventCopyWithImpl<$Res>
-    implements _$$ConsumePendingLinkCopyWith<$Res> {
-  __$$ConsumePendingLinkCopyWithImpl(
-      _$ConsumePendingLink _value, $Res Function(_$ConsumePendingLink) _then)
-      : super(_value, (v) => _then(v as _$ConsumePendingLink));
-
-  @override
-  _$ConsumePendingLink get _value => super._value as _$ConsumePendingLink;
+class __$$ConsumePendingLinkImplCopyWithImpl<$Res>
+    extends _$DeepLinkEventCopyWithImpl<$Res, _$ConsumePendingLinkImpl>
+    implements _$$ConsumePendingLinkImplCopyWith<$Res> {
+  __$$ConsumePendingLinkImplCopyWithImpl(_$ConsumePendingLinkImpl _value,
+      $Res Function(_$ConsumePendingLinkImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$ConsumePendingLink implements ConsumePendingLink {
-  const _$ConsumePendingLink();
+class _$ConsumePendingLinkImpl implements ConsumePendingLink {
+  const _$ConsumePendingLinkImpl();
 
   @override
   String toString() {
@@ -362,7 +357,7 @@ class _$ConsumePendingLink implements ConsumePendingLink {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$ConsumePendingLink);
+        (other.runtimeType == runtimeType && other is _$ConsumePendingLinkImpl);
   }
 
   @override
@@ -381,9 +376,9 @@ class _$ConsumePendingLink implements ConsumePendingLink {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initDeepLinking,
-    TResult Function(Uri link)? addPendingLink,
-    TResult Function()? consumePendingLink,
+    TResult? Function()? initDeepLinking,
+    TResult? Function(Uri link)? addPendingLink,
+    TResult? Function()? consumePendingLink,
   }) {
     return consumePendingLink?.call();
   }
@@ -415,9 +410,9 @@ class _$ConsumePendingLink implements ConsumePendingLink {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(InitDeepLinking value)? initDeepLinking,
-    TResult Function(AddPendingLink value)? addPendingLink,
-    TResult Function(ConsumePendingLink value)? consumePendingLink,
+    TResult? Function(InitDeepLinking value)? initDeepLinking,
+    TResult? Function(AddPendingLink value)? addPendingLink,
+    TResult? Function(ConsumePendingLink value)? consumePendingLink,
   }) {
     return consumePendingLink?.call(this);
   }
@@ -438,7 +433,7 @@ class _$ConsumePendingLink implements ConsumePendingLink {
 }
 
 abstract class ConsumePendingLink implements DeepLinkEvent {
-  const factory ConsumePendingLink() = _$ConsumePendingLink;
+  const factory ConsumePendingLink() = _$ConsumePendingLinkImpl;
 }
 
 /// @nodoc
@@ -463,7 +458,8 @@ mixin _$DeepLinkState {
 abstract class $DeepLinkStateCopyWith<$Res> {
   factory $DeepLinkStateCopyWith(
           DeepLinkState value, $Res Function(DeepLinkState) then) =
-      _$DeepLinkStateCopyWithImpl<$Res>;
+      _$DeepLinkStateCopyWithImpl<$Res, DeepLinkState>;
+  @useResult
   $Res call(
       {bool showErrorMessages,
       bool loading,
@@ -477,74 +473,77 @@ abstract class $DeepLinkStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$DeepLinkStateCopyWithImpl<$Res>
+class _$DeepLinkStateCopyWithImpl<$Res, $Val extends DeepLinkState>
     implements $DeepLinkStateCopyWith<$Res> {
   _$DeepLinkStateCopyWithImpl(this._value, this._then);
 
-  final DeepLinkState _value;
   // ignore: unused_field
-  final $Res Function(DeepLinkState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? showErrorMessages = freezed,
-    Object? loading = freezed,
-    Object? isSubmitting = freezed,
-    Object? isSubmitable = freezed,
-    Object? ready = freezed,
-    Object? isRetrieveError = freezed,
-    Object? clickType = freezed,
+    Object? showErrorMessages = null,
+    Object? loading = null,
+    Object? isSubmitting = null,
+    Object? isSubmitable = null,
+    Object? ready = null,
+    Object? isRetrieveError = null,
+    Object? clickType = null,
     Object? linkPending = freezed,
-    Object? failureOrSuccessOption = freezed,
+    Object? failureOrSuccessOption = null,
   }) {
     return _then(_value.copyWith(
-      showErrorMessages: showErrorMessages == freezed
+      showErrorMessages: null == showErrorMessages
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
               as bool,
-      loading: loading == freezed
+      loading: null == loading
           ? _value.loading
           : loading // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSubmitting: isSubmitting == freezed
+      isSubmitting: null == isSubmitting
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSubmitable: isSubmitable == freezed
+      isSubmitable: null == isSubmitable
           ? _value.isSubmitable
           : isSubmitable // ignore: cast_nullable_to_non_nullable
               as bool,
-      ready: ready == freezed
+      ready: null == ready
           ? _value.ready
           : ready // ignore: cast_nullable_to_non_nullable
               as bool,
-      isRetrieveError: isRetrieveError == freezed
+      isRetrieveError: null == isRetrieveError
           ? _value.isRetrieveError
           : isRetrieveError // ignore: cast_nullable_to_non_nullable
               as bool,
-      clickType: clickType == freezed
+      clickType: null == clickType
           ? _value.clickType
           : clickType // ignore: cast_nullable_to_non_nullable
               as String,
-      linkPending: linkPending == freezed
+      linkPending: freezed == linkPending
           ? _value.linkPending
           : linkPending // ignore: cast_nullable_to_non_nullable
               as Uri?,
-      failureOrSuccessOption: failureOrSuccessOption == freezed
+      failureOrSuccessOption: null == failureOrSuccessOption
           ? _value.failureOrSuccessOption
           : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
               as Option<Either<GlobalFailure, Unit>>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_DeepLinkStateCopyWith<$Res>
+abstract class _$$DeepLinkStateImplCopyWith<$Res>
     implements $DeepLinkStateCopyWith<$Res> {
-  factory _$$_DeepLinkStateCopyWith(
-          _$_DeepLinkState value, $Res Function(_$_DeepLinkState) then) =
-      __$$_DeepLinkStateCopyWithImpl<$Res>;
+  factory _$$DeepLinkStateImplCopyWith(
+          _$DeepLinkStateImpl value, $Res Function(_$DeepLinkStateImpl) then) =
+      __$$DeepLinkStateImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {bool showErrorMessages,
       bool loading,
@@ -558,62 +557,60 @@ abstract class _$$_DeepLinkStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_DeepLinkStateCopyWithImpl<$Res>
-    extends _$DeepLinkStateCopyWithImpl<$Res>
-    implements _$$_DeepLinkStateCopyWith<$Res> {
-  __$$_DeepLinkStateCopyWithImpl(
-      _$_DeepLinkState _value, $Res Function(_$_DeepLinkState) _then)
-      : super(_value, (v) => _then(v as _$_DeepLinkState));
+class __$$DeepLinkStateImplCopyWithImpl<$Res>
+    extends _$DeepLinkStateCopyWithImpl<$Res, _$DeepLinkStateImpl>
+    implements _$$DeepLinkStateImplCopyWith<$Res> {
+  __$$DeepLinkStateImplCopyWithImpl(
+      _$DeepLinkStateImpl _value, $Res Function(_$DeepLinkStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_DeepLinkState get _value => super._value as _$_DeepLinkState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? showErrorMessages = freezed,
-    Object? loading = freezed,
-    Object? isSubmitting = freezed,
-    Object? isSubmitable = freezed,
-    Object? ready = freezed,
-    Object? isRetrieveError = freezed,
-    Object? clickType = freezed,
+    Object? showErrorMessages = null,
+    Object? loading = null,
+    Object? isSubmitting = null,
+    Object? isSubmitable = null,
+    Object? ready = null,
+    Object? isRetrieveError = null,
+    Object? clickType = null,
     Object? linkPending = freezed,
-    Object? failureOrSuccessOption = freezed,
+    Object? failureOrSuccessOption = null,
   }) {
-    return _then(_$_DeepLinkState(
-      showErrorMessages: showErrorMessages == freezed
+    return _then(_$DeepLinkStateImpl(
+      showErrorMessages: null == showErrorMessages
           ? _value.showErrorMessages
           : showErrorMessages // ignore: cast_nullable_to_non_nullable
               as bool,
-      loading: loading == freezed
+      loading: null == loading
           ? _value.loading
           : loading // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSubmitting: isSubmitting == freezed
+      isSubmitting: null == isSubmitting
           ? _value.isSubmitting
           : isSubmitting // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSubmitable: isSubmitable == freezed
+      isSubmitable: null == isSubmitable
           ? _value.isSubmitable
           : isSubmitable // ignore: cast_nullable_to_non_nullable
               as bool,
-      ready: ready == freezed
+      ready: null == ready
           ? _value.ready
           : ready // ignore: cast_nullable_to_non_nullable
               as bool,
-      isRetrieveError: isRetrieveError == freezed
+      isRetrieveError: null == isRetrieveError
           ? _value.isRetrieveError
           : isRetrieveError // ignore: cast_nullable_to_non_nullable
               as bool,
-      clickType: clickType == freezed
+      clickType: null == clickType
           ? _value.clickType
           : clickType // ignore: cast_nullable_to_non_nullable
               as String,
-      linkPending: linkPending == freezed
+      linkPending: freezed == linkPending
           ? _value.linkPending
           : linkPending // ignore: cast_nullable_to_non_nullable
               as Uri?,
-      failureOrSuccessOption: failureOrSuccessOption == freezed
+      failureOrSuccessOption: null == failureOrSuccessOption
           ? _value.failureOrSuccessOption
           : failureOrSuccessOption // ignore: cast_nullable_to_non_nullable
               as Option<Either<GlobalFailure, Unit>>,
@@ -623,8 +620,8 @@ class __$$_DeepLinkStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DeepLinkState implements _DeepLinkState {
-  const _$_DeepLinkState(
+class _$DeepLinkStateImpl implements _DeepLinkState {
+  const _$DeepLinkStateImpl(
       {required this.showErrorMessages,
       required this.loading,
       required this.isSubmitting,
@@ -663,41 +660,43 @@ class _$_DeepLinkState implements _DeepLinkState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DeepLinkState &&
-            const DeepCollectionEquality()
-                .equals(other.showErrorMessages, showErrorMessages) &&
-            const DeepCollectionEquality().equals(other.loading, loading) &&
-            const DeepCollectionEquality()
-                .equals(other.isSubmitting, isSubmitting) &&
-            const DeepCollectionEquality()
-                .equals(other.isSubmitable, isSubmitable) &&
-            const DeepCollectionEquality().equals(other.ready, ready) &&
-            const DeepCollectionEquality()
-                .equals(other.isRetrieveError, isRetrieveError) &&
-            const DeepCollectionEquality().equals(other.clickType, clickType) &&
-            const DeepCollectionEquality()
-                .equals(other.linkPending, linkPending) &&
-            const DeepCollectionEquality()
-                .equals(other.failureOrSuccessOption, failureOrSuccessOption));
+            other is _$DeepLinkStateImpl &&
+            (identical(other.showErrorMessages, showErrorMessages) ||
+                other.showErrorMessages == showErrorMessages) &&
+            (identical(other.loading, loading) || other.loading == loading) &&
+            (identical(other.isSubmitting, isSubmitting) ||
+                other.isSubmitting == isSubmitting) &&
+            (identical(other.isSubmitable, isSubmitable) ||
+                other.isSubmitable == isSubmitable) &&
+            (identical(other.ready, ready) || other.ready == ready) &&
+            (identical(other.isRetrieveError, isRetrieveError) ||
+                other.isRetrieveError == isRetrieveError) &&
+            (identical(other.clickType, clickType) ||
+                other.clickType == clickType) &&
+            (identical(other.linkPending, linkPending) ||
+                other.linkPending == linkPending) &&
+            (identical(other.failureOrSuccessOption, failureOrSuccessOption) ||
+                other.failureOrSuccessOption == failureOrSuccessOption));
   }
 
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(showErrorMessages),
-      const DeepCollectionEquality().hash(loading),
-      const DeepCollectionEquality().hash(isSubmitting),
-      const DeepCollectionEquality().hash(isSubmitable),
-      const DeepCollectionEquality().hash(ready),
-      const DeepCollectionEquality().hash(isRetrieveError),
-      const DeepCollectionEquality().hash(clickType),
-      const DeepCollectionEquality().hash(linkPending),
-      const DeepCollectionEquality().hash(failureOrSuccessOption));
+      showErrorMessages,
+      loading,
+      isSubmitting,
+      isSubmitable,
+      ready,
+      isRetrieveError,
+      clickType,
+      linkPending,
+      failureOrSuccessOption);
 
   @JsonKey(ignore: true)
   @override
-  _$$_DeepLinkStateCopyWith<_$_DeepLinkState> get copyWith =>
-      __$$_DeepLinkStateCopyWithImpl<_$_DeepLinkState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$DeepLinkStateImplCopyWith<_$DeepLinkStateImpl> get copyWith =>
+      __$$DeepLinkStateImplCopyWithImpl<_$DeepLinkStateImpl>(this, _$identity);
 }
 
 abstract class _DeepLinkState implements DeepLinkState {
@@ -711,29 +710,28 @@ abstract class _DeepLinkState implements DeepLinkState {
       required final String clickType,
       required final Uri? linkPending,
       required final Option<Either<GlobalFailure, Unit>>
-          failureOrSuccessOption}) = _$_DeepLinkState;
+          failureOrSuccessOption}) = _$DeepLinkStateImpl;
 
   @override
-  bool get showErrorMessages => throw _privateConstructorUsedError;
+  bool get showErrorMessages;
   @override
-  bool get loading => throw _privateConstructorUsedError;
+  bool get loading;
   @override
-  bool get isSubmitting => throw _privateConstructorUsedError;
+  bool get isSubmitting;
   @override
-  bool get isSubmitable => throw _privateConstructorUsedError;
+  bool get isSubmitable;
   @override
-  bool get ready => throw _privateConstructorUsedError;
+  bool get ready;
   @override
-  bool get isRetrieveError => throw _privateConstructorUsedError;
+  bool get isRetrieveError;
   @override
-  String get clickType => throw _privateConstructorUsedError;
+  String get clickType;
   @override
-  Uri? get linkPending => throw _privateConstructorUsedError;
+  Uri? get linkPending;
   @override
-  Option<Either<GlobalFailure, Unit>> get failureOrSuccessOption =>
-      throw _privateConstructorUsedError;
+  Option<Either<GlobalFailure, Unit>> get failureOrSuccessOption;
   @override
   @JsonKey(ignore: true)
-  _$$_DeepLinkStateCopyWith<_$_DeepLinkState> get copyWith =>
+  _$$DeepLinkStateImplCopyWith<_$DeepLinkStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

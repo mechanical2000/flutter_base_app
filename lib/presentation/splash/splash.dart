@@ -7,7 +7,9 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+@RoutePage()
 class SplashScreenPage extends StatefulWidget {
+  static const String routeName = '/';
   const SplashScreenPage({Key? key, this.withDeepLink, this.fromLogout})
       : super(key: key);
   final bool? withDeepLink;

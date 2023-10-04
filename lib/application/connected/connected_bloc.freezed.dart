@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'connected_bloc.dart';
 
@@ -25,9 +25,9 @@ mixin _$ConnectedEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function()? onConnected,
-    TResult Function()? onNotConnected,
+    TResult? Function()? started,
+    TResult? Function()? onConnected,
+    TResult? Function()? onNotConnected,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -47,9 +47,9 @@ mixin _$ConnectedEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(OnConnected value)? onConnected,
-    TResult Function(OnNotConnected value)? onNotConnected,
+    TResult? Function(_Started value)? started,
+    TResult? Function(OnConnected value)? onConnected,
+    TResult? Function(OnNotConnected value)? onNotConnected,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -66,40 +66,40 @@ mixin _$ConnectedEvent {
 abstract class $ConnectedEventCopyWith<$Res> {
   factory $ConnectedEventCopyWith(
           ConnectedEvent value, $Res Function(ConnectedEvent) then) =
-      _$ConnectedEventCopyWithImpl<$Res>;
+      _$ConnectedEventCopyWithImpl<$Res, ConnectedEvent>;
 }
 
 /// @nodoc
-class _$ConnectedEventCopyWithImpl<$Res>
+class _$ConnectedEventCopyWithImpl<$Res, $Val extends ConnectedEvent>
     implements $ConnectedEventCopyWith<$Res> {
   _$ConnectedEventCopyWithImpl(this._value, this._then);
 
-  final ConnectedEvent _value;
   // ignore: unused_field
-  final $Res Function(ConnectedEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$_StartedCopyWith<$Res> {
-  factory _$$_StartedCopyWith(
-          _$_Started value, $Res Function(_$_Started) then) =
-      __$$_StartedCopyWithImpl<$Res>;
+abstract class _$$StartedImplCopyWith<$Res> {
+  factory _$$StartedImplCopyWith(
+          _$StartedImpl value, $Res Function(_$StartedImpl) then) =
+      __$$StartedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_StartedCopyWithImpl<$Res> extends _$ConnectedEventCopyWithImpl<$Res>
-    implements _$$_StartedCopyWith<$Res> {
-  __$$_StartedCopyWithImpl(_$_Started _value, $Res Function(_$_Started) _then)
-      : super(_value, (v) => _then(v as _$_Started));
-
-  @override
-  _$_Started get _value => super._value as _$_Started;
+class __$$StartedImplCopyWithImpl<$Res>
+    extends _$ConnectedEventCopyWithImpl<$Res, _$StartedImpl>
+    implements _$$StartedImplCopyWith<$Res> {
+  __$$StartedImplCopyWithImpl(
+      _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Started implements _Started {
-  const _$_Started();
+class _$StartedImpl implements _Started {
+  const _$StartedImpl();
 
   @override
   String toString() {
@@ -109,7 +109,7 @@ class _$_Started implements _Started {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Started);
+        (other.runtimeType == runtimeType && other is _$StartedImpl);
   }
 
   @override
@@ -128,9 +128,9 @@ class _$_Started implements _Started {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function()? onConnected,
-    TResult Function()? onNotConnected,
+    TResult? Function()? started,
+    TResult? Function()? onConnected,
+    TResult? Function()? onNotConnected,
   }) {
     return started?.call();
   }
@@ -162,9 +162,9 @@ class _$_Started implements _Started {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(OnConnected value)? onConnected,
-    TResult Function(OnNotConnected value)? onNotConnected,
+    TResult? Function(_Started value)? started,
+    TResult? Function(OnConnected value)? onConnected,
+    TResult? Function(OnNotConnected value)? onNotConnected,
   }) {
     return started?.call(this);
   }
@@ -185,32 +185,29 @@ class _$_Started implements _Started {
 }
 
 abstract class _Started implements ConnectedEvent {
-  const factory _Started() = _$_Started;
+  const factory _Started() = _$StartedImpl;
 }
 
 /// @nodoc
-abstract class _$$OnConnectedCopyWith<$Res> {
-  factory _$$OnConnectedCopyWith(
-          _$OnConnected value, $Res Function(_$OnConnected) then) =
-      __$$OnConnectedCopyWithImpl<$Res>;
+abstract class _$$OnConnectedImplCopyWith<$Res> {
+  factory _$$OnConnectedImplCopyWith(
+          _$OnConnectedImpl value, $Res Function(_$OnConnectedImpl) then) =
+      __$$OnConnectedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$OnConnectedCopyWithImpl<$Res>
-    extends _$ConnectedEventCopyWithImpl<$Res>
-    implements _$$OnConnectedCopyWith<$Res> {
-  __$$OnConnectedCopyWithImpl(
-      _$OnConnected _value, $Res Function(_$OnConnected) _then)
-      : super(_value, (v) => _then(v as _$OnConnected));
-
-  @override
-  _$OnConnected get _value => super._value as _$OnConnected;
+class __$$OnConnectedImplCopyWithImpl<$Res>
+    extends _$ConnectedEventCopyWithImpl<$Res, _$OnConnectedImpl>
+    implements _$$OnConnectedImplCopyWith<$Res> {
+  __$$OnConnectedImplCopyWithImpl(
+      _$OnConnectedImpl _value, $Res Function(_$OnConnectedImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$OnConnected implements OnConnected {
-  const _$OnConnected();
+class _$OnConnectedImpl implements OnConnected {
+  const _$OnConnectedImpl();
 
   @override
   String toString() {
@@ -220,7 +217,7 @@ class _$OnConnected implements OnConnected {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$OnConnected);
+        (other.runtimeType == runtimeType && other is _$OnConnectedImpl);
   }
 
   @override
@@ -239,9 +236,9 @@ class _$OnConnected implements OnConnected {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function()? onConnected,
-    TResult Function()? onNotConnected,
+    TResult? Function()? started,
+    TResult? Function()? onConnected,
+    TResult? Function()? onNotConnected,
   }) {
     return onConnected?.call();
   }
@@ -273,9 +270,9 @@ class _$OnConnected implements OnConnected {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(OnConnected value)? onConnected,
-    TResult Function(OnNotConnected value)? onNotConnected,
+    TResult? Function(_Started value)? started,
+    TResult? Function(OnConnected value)? onConnected,
+    TResult? Function(OnNotConnected value)? onNotConnected,
   }) {
     return onConnected?.call(this);
   }
@@ -296,32 +293,29 @@ class _$OnConnected implements OnConnected {
 }
 
 abstract class OnConnected implements ConnectedEvent {
-  const factory OnConnected() = _$OnConnected;
+  const factory OnConnected() = _$OnConnectedImpl;
 }
 
 /// @nodoc
-abstract class _$$OnNotConnectedCopyWith<$Res> {
-  factory _$$OnNotConnectedCopyWith(
-          _$OnNotConnected value, $Res Function(_$OnNotConnected) then) =
-      __$$OnNotConnectedCopyWithImpl<$Res>;
+abstract class _$$OnNotConnectedImplCopyWith<$Res> {
+  factory _$$OnNotConnectedImplCopyWith(_$OnNotConnectedImpl value,
+          $Res Function(_$OnNotConnectedImpl) then) =
+      __$$OnNotConnectedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$OnNotConnectedCopyWithImpl<$Res>
-    extends _$ConnectedEventCopyWithImpl<$Res>
-    implements _$$OnNotConnectedCopyWith<$Res> {
-  __$$OnNotConnectedCopyWithImpl(
-      _$OnNotConnected _value, $Res Function(_$OnNotConnected) _then)
-      : super(_value, (v) => _then(v as _$OnNotConnected));
-
-  @override
-  _$OnNotConnected get _value => super._value as _$OnNotConnected;
+class __$$OnNotConnectedImplCopyWithImpl<$Res>
+    extends _$ConnectedEventCopyWithImpl<$Res, _$OnNotConnectedImpl>
+    implements _$$OnNotConnectedImplCopyWith<$Res> {
+  __$$OnNotConnectedImplCopyWithImpl(
+      _$OnNotConnectedImpl _value, $Res Function(_$OnNotConnectedImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$OnNotConnected implements OnNotConnected {
-  const _$OnNotConnected();
+class _$OnNotConnectedImpl implements OnNotConnected {
+  const _$OnNotConnectedImpl();
 
   @override
   String toString() {
@@ -331,7 +325,7 @@ class _$OnNotConnected implements OnNotConnected {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$OnNotConnected);
+        (other.runtimeType == runtimeType && other is _$OnNotConnectedImpl);
   }
 
   @override
@@ -350,9 +344,9 @@ class _$OnNotConnected implements OnNotConnected {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function()? onConnected,
-    TResult Function()? onNotConnected,
+    TResult? Function()? started,
+    TResult? Function()? onConnected,
+    TResult? Function()? onNotConnected,
   }) {
     return onNotConnected?.call();
   }
@@ -384,9 +378,9 @@ class _$OnNotConnected implements OnNotConnected {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(OnConnected value)? onConnected,
-    TResult Function(OnNotConnected value)? onNotConnected,
+    TResult? Function(_Started value)? started,
+    TResult? Function(OnConnected value)? onConnected,
+    TResult? Function(OnNotConnected value)? onNotConnected,
   }) {
     return onNotConnected?.call(this);
   }
@@ -407,7 +401,7 @@ class _$OnNotConnected implements OnNotConnected {
 }
 
 abstract class OnNotConnected implements ConnectedEvent {
-  const factory OnNotConnected() = _$OnNotConnected;
+  const factory OnNotConnected() = _$OnNotConnectedImpl;
 }
 
 /// @nodoc
@@ -421,9 +415,9 @@ mixin _$ConnectedState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? connectedSucessState,
-    TResult Function()? connectedFailureState,
+    TResult? Function()? initial,
+    TResult? Function()? connectedSucessState,
+    TResult? Function()? connectedFailureState,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -444,9 +438,9 @@ mixin _$ConnectedState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(ConnectedSucessState value)? connectedSucessState,
-    TResult Function(ConnectedFailureState value)? connectedFailureState,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(ConnectedSucessState value)? connectedSucessState,
+    TResult? Function(ConnectedFailureState value)? connectedFailureState,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -463,40 +457,40 @@ mixin _$ConnectedState {
 abstract class $ConnectedStateCopyWith<$Res> {
   factory $ConnectedStateCopyWith(
           ConnectedState value, $Res Function(ConnectedState) then) =
-      _$ConnectedStateCopyWithImpl<$Res>;
+      _$ConnectedStateCopyWithImpl<$Res, ConnectedState>;
 }
 
 /// @nodoc
-class _$ConnectedStateCopyWithImpl<$Res>
+class _$ConnectedStateCopyWithImpl<$Res, $Val extends ConnectedState>
     implements $ConnectedStateCopyWith<$Res> {
   _$ConnectedStateCopyWithImpl(this._value, this._then);
 
-  final ConnectedState _value;
   // ignore: unused_field
-  final $Res Function(ConnectedState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$_InitialCopyWith<$Res> {
-  factory _$$_InitialCopyWith(
-          _$_Initial value, $Res Function(_$_Initial) then) =
-      __$$_InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res> extends _$ConnectedStateCopyWithImpl<$Res>
-    implements _$$_InitialCopyWith<$Res> {
-  __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
-      : super(_value, (v) => _then(v as _$_Initial));
-
-  @override
-  _$_Initial get _value => super._value as _$_Initial;
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$ConnectedStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Initial implements _Initial {
-  const _$_Initial();
+class _$InitialImpl implements _Initial {
+  const _$InitialImpl();
 
   @override
   String toString() {
@@ -506,7 +500,7 @@ class _$_Initial implements _Initial {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Initial);
+        (other.runtimeType == runtimeType && other is _$InitialImpl);
   }
 
   @override
@@ -525,9 +519,9 @@ class _$_Initial implements _Initial {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? connectedSucessState,
-    TResult Function()? connectedFailureState,
+    TResult? Function()? initial,
+    TResult? Function()? connectedSucessState,
+    TResult? Function()? connectedFailureState,
   }) {
     return initial?.call();
   }
@@ -560,9 +554,9 @@ class _$_Initial implements _Initial {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(ConnectedSucessState value)? connectedSucessState,
-    TResult Function(ConnectedFailureState value)? connectedFailureState,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(ConnectedSucessState value)? connectedSucessState,
+    TResult? Function(ConnectedFailureState value)? connectedFailureState,
   }) {
     return initial?.call(this);
   }
@@ -583,32 +577,29 @@ class _$_Initial implements _Initial {
 }
 
 abstract class _Initial implements ConnectedState {
-  const factory _Initial() = _$_Initial;
+  const factory _Initial() = _$InitialImpl;
 }
 
 /// @nodoc
-abstract class _$$ConnectedSucessStateCopyWith<$Res> {
-  factory _$$ConnectedSucessStateCopyWith(_$ConnectedSucessState value,
-          $Res Function(_$ConnectedSucessState) then) =
-      __$$ConnectedSucessStateCopyWithImpl<$Res>;
+abstract class _$$ConnectedSucessStateImplCopyWith<$Res> {
+  factory _$$ConnectedSucessStateImplCopyWith(_$ConnectedSucessStateImpl value,
+          $Res Function(_$ConnectedSucessStateImpl) then) =
+      __$$ConnectedSucessStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ConnectedSucessStateCopyWithImpl<$Res>
-    extends _$ConnectedStateCopyWithImpl<$Res>
-    implements _$$ConnectedSucessStateCopyWith<$Res> {
-  __$$ConnectedSucessStateCopyWithImpl(_$ConnectedSucessState _value,
-      $Res Function(_$ConnectedSucessState) _then)
-      : super(_value, (v) => _then(v as _$ConnectedSucessState));
-
-  @override
-  _$ConnectedSucessState get _value => super._value as _$ConnectedSucessState;
+class __$$ConnectedSucessStateImplCopyWithImpl<$Res>
+    extends _$ConnectedStateCopyWithImpl<$Res, _$ConnectedSucessStateImpl>
+    implements _$$ConnectedSucessStateImplCopyWith<$Res> {
+  __$$ConnectedSucessStateImplCopyWithImpl(_$ConnectedSucessStateImpl _value,
+      $Res Function(_$ConnectedSucessStateImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$ConnectedSucessState implements ConnectedSucessState {
-  const _$ConnectedSucessState();
+class _$ConnectedSucessStateImpl implements ConnectedSucessState {
+  const _$ConnectedSucessStateImpl();
 
   @override
   String toString() {
@@ -618,7 +609,8 @@ class _$ConnectedSucessState implements ConnectedSucessState {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$ConnectedSucessState);
+        (other.runtimeType == runtimeType &&
+            other is _$ConnectedSucessStateImpl);
   }
 
   @override
@@ -637,9 +629,9 @@ class _$ConnectedSucessState implements ConnectedSucessState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? connectedSucessState,
-    TResult Function()? connectedFailureState,
+    TResult? Function()? initial,
+    TResult? Function()? connectedSucessState,
+    TResult? Function()? connectedFailureState,
   }) {
     return connectedSucessState?.call();
   }
@@ -672,9 +664,9 @@ class _$ConnectedSucessState implements ConnectedSucessState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(ConnectedSucessState value)? connectedSucessState,
-    TResult Function(ConnectedFailureState value)? connectedFailureState,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(ConnectedSucessState value)? connectedSucessState,
+    TResult? Function(ConnectedFailureState value)? connectedFailureState,
   }) {
     return connectedSucessState?.call(this);
   }
@@ -695,32 +687,30 @@ class _$ConnectedSucessState implements ConnectedSucessState {
 }
 
 abstract class ConnectedSucessState implements ConnectedState {
-  const factory ConnectedSucessState() = _$ConnectedSucessState;
+  const factory ConnectedSucessState() = _$ConnectedSucessStateImpl;
 }
 
 /// @nodoc
-abstract class _$$ConnectedFailureStateCopyWith<$Res> {
-  factory _$$ConnectedFailureStateCopyWith(_$ConnectedFailureState value,
-          $Res Function(_$ConnectedFailureState) then) =
-      __$$ConnectedFailureStateCopyWithImpl<$Res>;
+abstract class _$$ConnectedFailureStateImplCopyWith<$Res> {
+  factory _$$ConnectedFailureStateImplCopyWith(
+          _$ConnectedFailureStateImpl value,
+          $Res Function(_$ConnectedFailureStateImpl) then) =
+      __$$ConnectedFailureStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ConnectedFailureStateCopyWithImpl<$Res>
-    extends _$ConnectedStateCopyWithImpl<$Res>
-    implements _$$ConnectedFailureStateCopyWith<$Res> {
-  __$$ConnectedFailureStateCopyWithImpl(_$ConnectedFailureState _value,
-      $Res Function(_$ConnectedFailureState) _then)
-      : super(_value, (v) => _then(v as _$ConnectedFailureState));
-
-  @override
-  _$ConnectedFailureState get _value => super._value as _$ConnectedFailureState;
+class __$$ConnectedFailureStateImplCopyWithImpl<$Res>
+    extends _$ConnectedStateCopyWithImpl<$Res, _$ConnectedFailureStateImpl>
+    implements _$$ConnectedFailureStateImplCopyWith<$Res> {
+  __$$ConnectedFailureStateImplCopyWithImpl(_$ConnectedFailureStateImpl _value,
+      $Res Function(_$ConnectedFailureStateImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$ConnectedFailureState implements ConnectedFailureState {
-  const _$ConnectedFailureState();
+class _$ConnectedFailureStateImpl implements ConnectedFailureState {
+  const _$ConnectedFailureStateImpl();
 
   @override
   String toString() {
@@ -730,7 +720,8 @@ class _$ConnectedFailureState implements ConnectedFailureState {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$ConnectedFailureState);
+        (other.runtimeType == runtimeType &&
+            other is _$ConnectedFailureStateImpl);
   }
 
   @override
@@ -749,9 +740,9 @@ class _$ConnectedFailureState implements ConnectedFailureState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? connectedSucessState,
-    TResult Function()? connectedFailureState,
+    TResult? Function()? initial,
+    TResult? Function()? connectedSucessState,
+    TResult? Function()? connectedFailureState,
   }) {
     return connectedFailureState?.call();
   }
@@ -784,9 +775,9 @@ class _$ConnectedFailureState implements ConnectedFailureState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(ConnectedSucessState value)? connectedSucessState,
-    TResult Function(ConnectedFailureState value)? connectedFailureState,
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(ConnectedSucessState value)? connectedSucessState,
+    TResult? Function(ConnectedFailureState value)? connectedFailureState,
   }) {
     return connectedFailureState?.call(this);
   }
@@ -807,5 +798,5 @@ class _$ConnectedFailureState implements ConnectedFailureState {
 }
 
 abstract class ConnectedFailureState implements ConnectedState {
-  const factory ConnectedFailureState() = _$ConnectedFailureState;
+  const factory ConnectedFailureState() = _$ConnectedFailureStateImpl;
 }

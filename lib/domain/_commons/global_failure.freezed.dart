@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'global_failure.dart';
 
@@ -25,9 +25,9 @@ mixin _$GlobalFailure {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String? errorText)? serverError,
-    TResult Function(String errorText)? unauthorized,
-    TResult Function()? noNetwork,
+    TResult? Function(String? errorText)? serverError,
+    TResult? Function(String errorText)? unauthorized,
+    TResult? Function()? noNetwork,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -47,9 +47,9 @@ mixin _$GlobalFailure {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(ServerError value)? serverError,
-    TResult Function(Unauthorized value)? unauthorized,
-    TResult Function(NoNetwork value)? noNetwork,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(Unauthorized value)? unauthorized,
+    TResult? Function(NoNetwork value)? noNetwork,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -66,44 +66,44 @@ mixin _$GlobalFailure {
 abstract class $GlobalFailureCopyWith<$Res> {
   factory $GlobalFailureCopyWith(
           GlobalFailure value, $Res Function(GlobalFailure) then) =
-      _$GlobalFailureCopyWithImpl<$Res>;
+      _$GlobalFailureCopyWithImpl<$Res, GlobalFailure>;
 }
 
 /// @nodoc
-class _$GlobalFailureCopyWithImpl<$Res>
+class _$GlobalFailureCopyWithImpl<$Res, $Val extends GlobalFailure>
     implements $GlobalFailureCopyWith<$Res> {
   _$GlobalFailureCopyWithImpl(this._value, this._then);
 
-  final GlobalFailure _value;
   // ignore: unused_field
-  final $Res Function(GlobalFailure) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$ServerErrorCopyWith<$Res> {
-  factory _$$ServerErrorCopyWith(
-          _$ServerError value, $Res Function(_$ServerError) then) =
-      __$$ServerErrorCopyWithImpl<$Res>;
+abstract class _$$ServerErrorImplCopyWith<$Res> {
+  factory _$$ServerErrorImplCopyWith(
+          _$ServerErrorImpl value, $Res Function(_$ServerErrorImpl) then) =
+      __$$ServerErrorImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String? errorText});
 }
 
 /// @nodoc
-class __$$ServerErrorCopyWithImpl<$Res>
-    extends _$GlobalFailureCopyWithImpl<$Res>
-    implements _$$ServerErrorCopyWith<$Res> {
-  __$$ServerErrorCopyWithImpl(
-      _$ServerError _value, $Res Function(_$ServerError) _then)
-      : super(_value, (v) => _then(v as _$ServerError));
+class __$$ServerErrorImplCopyWithImpl<$Res>
+    extends _$GlobalFailureCopyWithImpl<$Res, _$ServerErrorImpl>
+    implements _$$ServerErrorImplCopyWith<$Res> {
+  __$$ServerErrorImplCopyWithImpl(
+      _$ServerErrorImpl _value, $Res Function(_$ServerErrorImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$ServerError get _value => super._value as _$ServerError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? errorText = freezed,
   }) {
-    return _then(_$ServerError(
-      errorText == freezed
+    return _then(_$ServerErrorImpl(
+      freezed == errorText
           ? _value.errorText
           : errorText // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -113,8 +113,8 @@ class __$$ServerErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ServerError implements ServerError {
-  const _$ServerError(this.errorText);
+class _$ServerErrorImpl implements ServerError {
+  const _$ServerErrorImpl(this.errorText);
 
   @override
   final String? errorText;
@@ -128,18 +128,19 @@ class _$ServerError implements ServerError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ServerError &&
-            const DeepCollectionEquality().equals(other.errorText, errorText));
+            other is _$ServerErrorImpl &&
+            (identical(other.errorText, errorText) ||
+                other.errorText == errorText));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(errorText));
+  int get hashCode => Object.hash(runtimeType, errorText);
 
   @JsonKey(ignore: true)
   @override
-  _$$ServerErrorCopyWith<_$ServerError> get copyWith =>
-      __$$ServerErrorCopyWithImpl<_$ServerError>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ServerErrorImplCopyWith<_$ServerErrorImpl> get copyWith =>
+      __$$ServerErrorImplCopyWithImpl<_$ServerErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -154,9 +155,9 @@ class _$ServerError implements ServerError {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String? errorText)? serverError,
-    TResult Function(String errorText)? unauthorized,
-    TResult Function()? noNetwork,
+    TResult? Function(String? errorText)? serverError,
+    TResult? Function(String errorText)? unauthorized,
+    TResult? Function()? noNetwork,
   }) {
     return serverError?.call(errorText);
   }
@@ -188,9 +189,9 @@ class _$ServerError implements ServerError {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(ServerError value)? serverError,
-    TResult Function(Unauthorized value)? unauthorized,
-    TResult Function(NoNetwork value)? noNetwork,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(Unauthorized value)? unauthorized,
+    TResult? Function(NoNetwork value)? noNetwork,
   }) {
     return serverError?.call(this);
   }
@@ -211,39 +212,38 @@ class _$ServerError implements ServerError {
 }
 
 abstract class ServerError implements GlobalFailure {
-  const factory ServerError(final String? errorText) = _$ServerError;
+  const factory ServerError(final String? errorText) = _$ServerErrorImpl;
 
-  String? get errorText => throw _privateConstructorUsedError;
+  String? get errorText;
   @JsonKey(ignore: true)
-  _$$ServerErrorCopyWith<_$ServerError> get copyWith =>
+  _$$ServerErrorImplCopyWith<_$ServerErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$UnauthorizedCopyWith<$Res> {
-  factory _$$UnauthorizedCopyWith(
-          _$Unauthorized value, $Res Function(_$Unauthorized) then) =
-      __$$UnauthorizedCopyWithImpl<$Res>;
+abstract class _$$UnauthorizedImplCopyWith<$Res> {
+  factory _$$UnauthorizedImplCopyWith(
+          _$UnauthorizedImpl value, $Res Function(_$UnauthorizedImpl) then) =
+      __$$UnauthorizedImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String errorText});
 }
 
 /// @nodoc
-class __$$UnauthorizedCopyWithImpl<$Res>
-    extends _$GlobalFailureCopyWithImpl<$Res>
-    implements _$$UnauthorizedCopyWith<$Res> {
-  __$$UnauthorizedCopyWithImpl(
-      _$Unauthorized _value, $Res Function(_$Unauthorized) _then)
-      : super(_value, (v) => _then(v as _$Unauthorized));
+class __$$UnauthorizedImplCopyWithImpl<$Res>
+    extends _$GlobalFailureCopyWithImpl<$Res, _$UnauthorizedImpl>
+    implements _$$UnauthorizedImplCopyWith<$Res> {
+  __$$UnauthorizedImplCopyWithImpl(
+      _$UnauthorizedImpl _value, $Res Function(_$UnauthorizedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$Unauthorized get _value => super._value as _$Unauthorized;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? errorText = freezed,
+    Object? errorText = null,
   }) {
-    return _then(_$Unauthorized(
-      errorText == freezed
+    return _then(_$UnauthorizedImpl(
+      null == errorText
           ? _value.errorText
           : errorText // ignore: cast_nullable_to_non_nullable
               as String,
@@ -253,8 +253,8 @@ class __$$UnauthorizedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Unauthorized implements Unauthorized {
-  const _$Unauthorized(this.errorText);
+class _$UnauthorizedImpl implements Unauthorized {
+  const _$UnauthorizedImpl(this.errorText);
 
   @override
   final String errorText;
@@ -268,18 +268,19 @@ class _$Unauthorized implements Unauthorized {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$Unauthorized &&
-            const DeepCollectionEquality().equals(other.errorText, errorText));
+            other is _$UnauthorizedImpl &&
+            (identical(other.errorText, errorText) ||
+                other.errorText == errorText));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(errorText));
+  int get hashCode => Object.hash(runtimeType, errorText);
 
   @JsonKey(ignore: true)
   @override
-  _$$UnauthorizedCopyWith<_$Unauthorized> get copyWith =>
-      __$$UnauthorizedCopyWithImpl<_$Unauthorized>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnauthorizedImplCopyWith<_$UnauthorizedImpl> get copyWith =>
+      __$$UnauthorizedImplCopyWithImpl<_$UnauthorizedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -294,9 +295,9 @@ class _$Unauthorized implements Unauthorized {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String? errorText)? serverError,
-    TResult Function(String errorText)? unauthorized,
-    TResult Function()? noNetwork,
+    TResult? Function(String? errorText)? serverError,
+    TResult? Function(String errorText)? unauthorized,
+    TResult? Function()? noNetwork,
   }) {
     return unauthorized?.call(errorText);
   }
@@ -328,9 +329,9 @@ class _$Unauthorized implements Unauthorized {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(ServerError value)? serverError,
-    TResult Function(Unauthorized value)? unauthorized,
-    TResult Function(NoNetwork value)? noNetwork,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(Unauthorized value)? unauthorized,
+    TResult? Function(NoNetwork value)? noNetwork,
   }) {
     return unauthorized?.call(this);
   }
@@ -351,36 +352,34 @@ class _$Unauthorized implements Unauthorized {
 }
 
 abstract class Unauthorized implements GlobalFailure {
-  const factory Unauthorized(final String errorText) = _$Unauthorized;
+  const factory Unauthorized(final String errorText) = _$UnauthorizedImpl;
 
-  String get errorText => throw _privateConstructorUsedError;
+  String get errorText;
   @JsonKey(ignore: true)
-  _$$UnauthorizedCopyWith<_$Unauthorized> get copyWith =>
+  _$$UnauthorizedImplCopyWith<_$UnauthorizedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$NoNetworkCopyWith<$Res> {
-  factory _$$NoNetworkCopyWith(
-          _$NoNetwork value, $Res Function(_$NoNetwork) then) =
-      __$$NoNetworkCopyWithImpl<$Res>;
+abstract class _$$NoNetworkImplCopyWith<$Res> {
+  factory _$$NoNetworkImplCopyWith(
+          _$NoNetworkImpl value, $Res Function(_$NoNetworkImpl) then) =
+      __$$NoNetworkImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$NoNetworkCopyWithImpl<$Res> extends _$GlobalFailureCopyWithImpl<$Res>
-    implements _$$NoNetworkCopyWith<$Res> {
-  __$$NoNetworkCopyWithImpl(
-      _$NoNetwork _value, $Res Function(_$NoNetwork) _then)
-      : super(_value, (v) => _then(v as _$NoNetwork));
-
-  @override
-  _$NoNetwork get _value => super._value as _$NoNetwork;
+class __$$NoNetworkImplCopyWithImpl<$Res>
+    extends _$GlobalFailureCopyWithImpl<$Res, _$NoNetworkImpl>
+    implements _$$NoNetworkImplCopyWith<$Res> {
+  __$$NoNetworkImplCopyWithImpl(
+      _$NoNetworkImpl _value, $Res Function(_$NoNetworkImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$NoNetwork implements NoNetwork {
-  const _$NoNetwork();
+class _$NoNetworkImpl implements NoNetwork {
+  const _$NoNetworkImpl();
 
   @override
   String toString() {
@@ -390,7 +389,7 @@ class _$NoNetwork implements NoNetwork {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$NoNetwork);
+        (other.runtimeType == runtimeType && other is _$NoNetworkImpl);
   }
 
   @override
@@ -409,9 +408,9 @@ class _$NoNetwork implements NoNetwork {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String? errorText)? serverError,
-    TResult Function(String errorText)? unauthorized,
-    TResult Function()? noNetwork,
+    TResult? Function(String? errorText)? serverError,
+    TResult? Function(String errorText)? unauthorized,
+    TResult? Function()? noNetwork,
   }) {
     return noNetwork?.call();
   }
@@ -443,9 +442,9 @@ class _$NoNetwork implements NoNetwork {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(ServerError value)? serverError,
-    TResult Function(Unauthorized value)? unauthorized,
-    TResult Function(NoNetwork value)? noNetwork,
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(Unauthorized value)? unauthorized,
+    TResult? Function(NoNetwork value)? noNetwork,
   }) {
     return noNetwork?.call(this);
   }
@@ -466,5 +465,5 @@ class _$NoNetwork implements NoNetwork {
 }
 
 abstract class NoNetwork implements GlobalFailure {
-  const factory NoNetwork() = _$NoNetwork;
+  const factory NoNetwork() = _$NoNetworkImpl;
 }

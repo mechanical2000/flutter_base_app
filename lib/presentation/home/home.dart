@@ -1,7 +1,10 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:base_app/presentation/_commons/theming/app_color.dart';
 import 'package:flutter/material.dart';
-import 'package:easy_localization/easy_localization.dart';
 
+@RoutePage()
 class HomePage extends StatefulWidget {
+  static const String routeName = '/home';
   const HomePage({Key? key}) : super(key: key);
 
   @override
@@ -12,9 +15,14 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
+      appBar: AppBar(
+        backgroundColor: AppColors.primary,
+        title: const Text('Home'),
+        centerTitle: true,
+      ),
+      body: const SafeArea(
           child: Center(
-        child: Text('common.title'.tr()),
+        child: Text('Home Page'),
       )),
     );
   }

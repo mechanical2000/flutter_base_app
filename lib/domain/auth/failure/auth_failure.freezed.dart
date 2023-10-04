@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'auth_failure.dart';
 
@@ -27,11 +27,11 @@ mixin _$AuthFailure {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? serverError,
-    TResult Function(String errorText)? unauthorized,
-    TResult Function(String errorText)? fieldError,
-    TResult Function()? noNetwork,
-    TResult Function()? invalidEmailAndPasswordCombination,
+    TResult? Function()? serverError,
+    TResult? Function(String errorText)? unauthorized,
+    TResult? Function(String errorText)? fieldError,
+    TResult? Function()? noNetwork,
+    TResult? Function()? invalidEmailAndPasswordCombination,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -56,11 +56,11 @@ mixin _$AuthFailure {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(ServerError value)? serverError,
-    TResult Function(Unauthorized value)? unauthorized,
-    TResult Function(FieldError value)? fieldError,
-    TResult Function(NoNetwork value)? noNetwork,
-    TResult Function(InvalidEmailAndPasswordCombination value)?
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(Unauthorized value)? unauthorized,
+    TResult? Function(FieldError value)? fieldError,
+    TResult? Function(NoNetwork value)? noNetwork,
+    TResult? Function(InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
   }) =>
       throw _privateConstructorUsedError;
@@ -81,40 +81,40 @@ mixin _$AuthFailure {
 abstract class $AuthFailureCopyWith<$Res> {
   factory $AuthFailureCopyWith(
           AuthFailure value, $Res Function(AuthFailure) then) =
-      _$AuthFailureCopyWithImpl<$Res>;
+      _$AuthFailureCopyWithImpl<$Res, AuthFailure>;
 }
 
 /// @nodoc
-class _$AuthFailureCopyWithImpl<$Res> implements $AuthFailureCopyWith<$Res> {
+class _$AuthFailureCopyWithImpl<$Res, $Val extends AuthFailure>
+    implements $AuthFailureCopyWith<$Res> {
   _$AuthFailureCopyWithImpl(this._value, this._then);
 
-  final AuthFailure _value;
   // ignore: unused_field
-  final $Res Function(AuthFailure) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$ServerErrorCopyWith<$Res> {
-  factory _$$ServerErrorCopyWith(
-          _$ServerError value, $Res Function(_$ServerError) then) =
-      __$$ServerErrorCopyWithImpl<$Res>;
+abstract class _$$ServerErrorImplCopyWith<$Res> {
+  factory _$$ServerErrorImplCopyWith(
+          _$ServerErrorImpl value, $Res Function(_$ServerErrorImpl) then) =
+      __$$ServerErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ServerErrorCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$$ServerErrorCopyWith<$Res> {
-  __$$ServerErrorCopyWithImpl(
-      _$ServerError _value, $Res Function(_$ServerError) _then)
-      : super(_value, (v) => _then(v as _$ServerError));
-
-  @override
-  _$ServerError get _value => super._value as _$ServerError;
+class __$$ServerErrorImplCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res, _$ServerErrorImpl>
+    implements _$$ServerErrorImplCopyWith<$Res> {
+  __$$ServerErrorImplCopyWithImpl(
+      _$ServerErrorImpl _value, $Res Function(_$ServerErrorImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$ServerError implements ServerError {
-  const _$ServerError();
+class _$ServerErrorImpl implements ServerError {
+  const _$ServerErrorImpl();
 
   @override
   String toString() {
@@ -124,7 +124,7 @@ class _$ServerError implements ServerError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$ServerError);
+        (other.runtimeType == runtimeType && other is _$ServerErrorImpl);
   }
 
   @override
@@ -145,11 +145,11 @@ class _$ServerError implements ServerError {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? serverError,
-    TResult Function(String errorText)? unauthorized,
-    TResult Function(String errorText)? fieldError,
-    TResult Function()? noNetwork,
-    TResult Function()? invalidEmailAndPasswordCombination,
+    TResult? Function()? serverError,
+    TResult? Function(String errorText)? unauthorized,
+    TResult? Function(String errorText)? fieldError,
+    TResult? Function()? noNetwork,
+    TResult? Function()? invalidEmailAndPasswordCombination,
   }) {
     return serverError?.call();
   }
@@ -186,11 +186,11 @@ class _$ServerError implements ServerError {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(ServerError value)? serverError,
-    TResult Function(Unauthorized value)? unauthorized,
-    TResult Function(FieldError value)? fieldError,
-    TResult Function(NoNetwork value)? noNetwork,
-    TResult Function(InvalidEmailAndPasswordCombination value)?
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(Unauthorized value)? unauthorized,
+    TResult? Function(FieldError value)? fieldError,
+    TResult? Function(NoNetwork value)? noNetwork,
+    TResult? Function(InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
   }) {
     return serverError?.call(this);
@@ -215,33 +215,33 @@ class _$ServerError implements ServerError {
 }
 
 abstract class ServerError implements AuthFailure {
-  const factory ServerError() = _$ServerError;
+  const factory ServerError() = _$ServerErrorImpl;
 }
 
 /// @nodoc
-abstract class _$$UnauthorizedCopyWith<$Res> {
-  factory _$$UnauthorizedCopyWith(
-          _$Unauthorized value, $Res Function(_$Unauthorized) then) =
-      __$$UnauthorizedCopyWithImpl<$Res>;
+abstract class _$$UnauthorizedImplCopyWith<$Res> {
+  factory _$$UnauthorizedImplCopyWith(
+          _$UnauthorizedImpl value, $Res Function(_$UnauthorizedImpl) then) =
+      __$$UnauthorizedImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String errorText});
 }
 
 /// @nodoc
-class __$$UnauthorizedCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$$UnauthorizedCopyWith<$Res> {
-  __$$UnauthorizedCopyWithImpl(
-      _$Unauthorized _value, $Res Function(_$Unauthorized) _then)
-      : super(_value, (v) => _then(v as _$Unauthorized));
+class __$$UnauthorizedImplCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res, _$UnauthorizedImpl>
+    implements _$$UnauthorizedImplCopyWith<$Res> {
+  __$$UnauthorizedImplCopyWithImpl(
+      _$UnauthorizedImpl _value, $Res Function(_$UnauthorizedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$Unauthorized get _value => super._value as _$Unauthorized;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? errorText = freezed,
+    Object? errorText = null,
   }) {
-    return _then(_$Unauthorized(
-      errorText == freezed
+    return _then(_$UnauthorizedImpl(
+      null == errorText
           ? _value.errorText
           : errorText // ignore: cast_nullable_to_non_nullable
               as String,
@@ -251,8 +251,8 @@ class __$$UnauthorizedCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Unauthorized implements Unauthorized {
-  const _$Unauthorized(this.errorText);
+class _$UnauthorizedImpl implements Unauthorized {
+  const _$UnauthorizedImpl(this.errorText);
 
   @override
   final String errorText;
@@ -266,18 +266,19 @@ class _$Unauthorized implements Unauthorized {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$Unauthorized &&
-            const DeepCollectionEquality().equals(other.errorText, errorText));
+            other is _$UnauthorizedImpl &&
+            (identical(other.errorText, errorText) ||
+                other.errorText == errorText));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(errorText));
+  int get hashCode => Object.hash(runtimeType, errorText);
 
   @JsonKey(ignore: true)
   @override
-  _$$UnauthorizedCopyWith<_$Unauthorized> get copyWith =>
-      __$$UnauthorizedCopyWithImpl<_$Unauthorized>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UnauthorizedImplCopyWith<_$UnauthorizedImpl> get copyWith =>
+      __$$UnauthorizedImplCopyWithImpl<_$UnauthorizedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -294,11 +295,11 @@ class _$Unauthorized implements Unauthorized {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? serverError,
-    TResult Function(String errorText)? unauthorized,
-    TResult Function(String errorText)? fieldError,
-    TResult Function()? noNetwork,
-    TResult Function()? invalidEmailAndPasswordCombination,
+    TResult? Function()? serverError,
+    TResult? Function(String errorText)? unauthorized,
+    TResult? Function(String errorText)? fieldError,
+    TResult? Function()? noNetwork,
+    TResult? Function()? invalidEmailAndPasswordCombination,
   }) {
     return unauthorized?.call(errorText);
   }
@@ -335,11 +336,11 @@ class _$Unauthorized implements Unauthorized {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(ServerError value)? serverError,
-    TResult Function(Unauthorized value)? unauthorized,
-    TResult Function(FieldError value)? fieldError,
-    TResult Function(NoNetwork value)? noNetwork,
-    TResult Function(InvalidEmailAndPasswordCombination value)?
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(Unauthorized value)? unauthorized,
+    TResult? Function(FieldError value)? fieldError,
+    TResult? Function(NoNetwork value)? noNetwork,
+    TResult? Function(InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
   }) {
     return unauthorized?.call(this);
@@ -364,38 +365,38 @@ class _$Unauthorized implements Unauthorized {
 }
 
 abstract class Unauthorized implements AuthFailure {
-  const factory Unauthorized(final String errorText) = _$Unauthorized;
+  const factory Unauthorized(final String errorText) = _$UnauthorizedImpl;
 
-  String get errorText => throw _privateConstructorUsedError;
+  String get errorText;
   @JsonKey(ignore: true)
-  _$$UnauthorizedCopyWith<_$Unauthorized> get copyWith =>
+  _$$UnauthorizedImplCopyWith<_$UnauthorizedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$FieldErrorCopyWith<$Res> {
-  factory _$$FieldErrorCopyWith(
-          _$FieldError value, $Res Function(_$FieldError) then) =
-      __$$FieldErrorCopyWithImpl<$Res>;
+abstract class _$$FieldErrorImplCopyWith<$Res> {
+  factory _$$FieldErrorImplCopyWith(
+          _$FieldErrorImpl value, $Res Function(_$FieldErrorImpl) then) =
+      __$$FieldErrorImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String errorText});
 }
 
 /// @nodoc
-class __$$FieldErrorCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$$FieldErrorCopyWith<$Res> {
-  __$$FieldErrorCopyWithImpl(
-      _$FieldError _value, $Res Function(_$FieldError) _then)
-      : super(_value, (v) => _then(v as _$FieldError));
+class __$$FieldErrorImplCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res, _$FieldErrorImpl>
+    implements _$$FieldErrorImplCopyWith<$Res> {
+  __$$FieldErrorImplCopyWithImpl(
+      _$FieldErrorImpl _value, $Res Function(_$FieldErrorImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$FieldError get _value => super._value as _$FieldError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? errorText = freezed,
+    Object? errorText = null,
   }) {
-    return _then(_$FieldError(
-      errorText == freezed
+    return _then(_$FieldErrorImpl(
+      null == errorText
           ? _value.errorText
           : errorText // ignore: cast_nullable_to_non_nullable
               as String,
@@ -405,8 +406,8 @@ class __$$FieldErrorCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$FieldError implements FieldError {
-  const _$FieldError(this.errorText);
+class _$FieldErrorImpl implements FieldError {
+  const _$FieldErrorImpl(this.errorText);
 
   @override
   final String errorText;
@@ -420,18 +421,19 @@ class _$FieldError implements FieldError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FieldError &&
-            const DeepCollectionEquality().equals(other.errorText, errorText));
+            other is _$FieldErrorImpl &&
+            (identical(other.errorText, errorText) ||
+                other.errorText == errorText));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(errorText));
+  int get hashCode => Object.hash(runtimeType, errorText);
 
   @JsonKey(ignore: true)
   @override
-  _$$FieldErrorCopyWith<_$FieldError> get copyWith =>
-      __$$FieldErrorCopyWithImpl<_$FieldError>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FieldErrorImplCopyWith<_$FieldErrorImpl> get copyWith =>
+      __$$FieldErrorImplCopyWithImpl<_$FieldErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -448,11 +450,11 @@ class _$FieldError implements FieldError {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? serverError,
-    TResult Function(String errorText)? unauthorized,
-    TResult Function(String errorText)? fieldError,
-    TResult Function()? noNetwork,
-    TResult Function()? invalidEmailAndPasswordCombination,
+    TResult? Function()? serverError,
+    TResult? Function(String errorText)? unauthorized,
+    TResult? Function(String errorText)? fieldError,
+    TResult? Function()? noNetwork,
+    TResult? Function()? invalidEmailAndPasswordCombination,
   }) {
     return fieldError?.call(errorText);
   }
@@ -489,11 +491,11 @@ class _$FieldError implements FieldError {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(ServerError value)? serverError,
-    TResult Function(Unauthorized value)? unauthorized,
-    TResult Function(FieldError value)? fieldError,
-    TResult Function(NoNetwork value)? noNetwork,
-    TResult Function(InvalidEmailAndPasswordCombination value)?
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(Unauthorized value)? unauthorized,
+    TResult? Function(FieldError value)? fieldError,
+    TResult? Function(NoNetwork value)? noNetwork,
+    TResult? Function(InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
   }) {
     return fieldError?.call(this);
@@ -518,36 +520,34 @@ class _$FieldError implements FieldError {
 }
 
 abstract class FieldError implements AuthFailure {
-  const factory FieldError(final String errorText) = _$FieldError;
+  const factory FieldError(final String errorText) = _$FieldErrorImpl;
 
-  String get errorText => throw _privateConstructorUsedError;
+  String get errorText;
   @JsonKey(ignore: true)
-  _$$FieldErrorCopyWith<_$FieldError> get copyWith =>
+  _$$FieldErrorImplCopyWith<_$FieldErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$NoNetworkCopyWith<$Res> {
-  factory _$$NoNetworkCopyWith(
-          _$NoNetwork value, $Res Function(_$NoNetwork) then) =
-      __$$NoNetworkCopyWithImpl<$Res>;
+abstract class _$$NoNetworkImplCopyWith<$Res> {
+  factory _$$NoNetworkImplCopyWith(
+          _$NoNetworkImpl value, $Res Function(_$NoNetworkImpl) then) =
+      __$$NoNetworkImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$NoNetworkCopyWithImpl<$Res> extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$$NoNetworkCopyWith<$Res> {
-  __$$NoNetworkCopyWithImpl(
-      _$NoNetwork _value, $Res Function(_$NoNetwork) _then)
-      : super(_value, (v) => _then(v as _$NoNetwork));
-
-  @override
-  _$NoNetwork get _value => super._value as _$NoNetwork;
+class __$$NoNetworkImplCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res, _$NoNetworkImpl>
+    implements _$$NoNetworkImplCopyWith<$Res> {
+  __$$NoNetworkImplCopyWithImpl(
+      _$NoNetworkImpl _value, $Res Function(_$NoNetworkImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$NoNetwork implements NoNetwork {
-  const _$NoNetwork();
+class _$NoNetworkImpl implements NoNetwork {
+  const _$NoNetworkImpl();
 
   @override
   String toString() {
@@ -557,7 +557,7 @@ class _$NoNetwork implements NoNetwork {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$NoNetwork);
+        (other.runtimeType == runtimeType && other is _$NoNetworkImpl);
   }
 
   @override
@@ -578,11 +578,11 @@ class _$NoNetwork implements NoNetwork {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? serverError,
-    TResult Function(String errorText)? unauthorized,
-    TResult Function(String errorText)? fieldError,
-    TResult Function()? noNetwork,
-    TResult Function()? invalidEmailAndPasswordCombination,
+    TResult? Function()? serverError,
+    TResult? Function(String errorText)? unauthorized,
+    TResult? Function(String errorText)? fieldError,
+    TResult? Function()? noNetwork,
+    TResult? Function()? invalidEmailAndPasswordCombination,
   }) {
     return noNetwork?.call();
   }
@@ -619,11 +619,11 @@ class _$NoNetwork implements NoNetwork {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(ServerError value)? serverError,
-    TResult Function(Unauthorized value)? unauthorized,
-    TResult Function(FieldError value)? fieldError,
-    TResult Function(NoNetwork value)? noNetwork,
-    TResult Function(InvalidEmailAndPasswordCombination value)?
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(Unauthorized value)? unauthorized,
+    TResult? Function(FieldError value)? fieldError,
+    TResult? Function(NoNetwork value)? noNetwork,
+    TResult? Function(InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
   }) {
     return noNetwork?.call(this);
@@ -648,36 +648,33 @@ class _$NoNetwork implements NoNetwork {
 }
 
 abstract class NoNetwork implements AuthFailure, NetworkFailure {
-  const factory NoNetwork() = _$NoNetwork;
+  const factory NoNetwork() = _$NoNetworkImpl;
 }
 
 /// @nodoc
-abstract class _$$InvalidEmailAndPasswordCombinationCopyWith<$Res> {
-  factory _$$InvalidEmailAndPasswordCombinationCopyWith(
-          _$InvalidEmailAndPasswordCombination value,
-          $Res Function(_$InvalidEmailAndPasswordCombination) then) =
-      __$$InvalidEmailAndPasswordCombinationCopyWithImpl<$Res>;
+abstract class _$$InvalidEmailAndPasswordCombinationImplCopyWith<$Res> {
+  factory _$$InvalidEmailAndPasswordCombinationImplCopyWith(
+          _$InvalidEmailAndPasswordCombinationImpl value,
+          $Res Function(_$InvalidEmailAndPasswordCombinationImpl) then) =
+      __$$InvalidEmailAndPasswordCombinationImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$InvalidEmailAndPasswordCombinationCopyWithImpl<$Res>
-    extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$$InvalidEmailAndPasswordCombinationCopyWith<$Res> {
-  __$$InvalidEmailAndPasswordCombinationCopyWithImpl(
-      _$InvalidEmailAndPasswordCombination _value,
-      $Res Function(_$InvalidEmailAndPasswordCombination) _then)
-      : super(_value, (v) => _then(v as _$InvalidEmailAndPasswordCombination));
-
-  @override
-  _$InvalidEmailAndPasswordCombination get _value =>
-      super._value as _$InvalidEmailAndPasswordCombination;
+class __$$InvalidEmailAndPasswordCombinationImplCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res,
+        _$InvalidEmailAndPasswordCombinationImpl>
+    implements _$$InvalidEmailAndPasswordCombinationImplCopyWith<$Res> {
+  __$$InvalidEmailAndPasswordCombinationImplCopyWithImpl(
+      _$InvalidEmailAndPasswordCombinationImpl _value,
+      $Res Function(_$InvalidEmailAndPasswordCombinationImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$InvalidEmailAndPasswordCombination
+class _$InvalidEmailAndPasswordCombinationImpl
     implements InvalidEmailAndPasswordCombination {
-  const _$InvalidEmailAndPasswordCombination();
+  const _$InvalidEmailAndPasswordCombinationImpl();
 
   @override
   String toString() {
@@ -688,7 +685,7 @@ class _$InvalidEmailAndPasswordCombination
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$InvalidEmailAndPasswordCombination);
+            other is _$InvalidEmailAndPasswordCombinationImpl);
   }
 
   @override
@@ -709,11 +706,11 @@ class _$InvalidEmailAndPasswordCombination
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? serverError,
-    TResult Function(String errorText)? unauthorized,
-    TResult Function(String errorText)? fieldError,
-    TResult Function()? noNetwork,
-    TResult Function()? invalidEmailAndPasswordCombination,
+    TResult? Function()? serverError,
+    TResult? Function(String errorText)? unauthorized,
+    TResult? Function(String errorText)? fieldError,
+    TResult? Function()? noNetwork,
+    TResult? Function()? invalidEmailAndPasswordCombination,
   }) {
     return invalidEmailAndPasswordCombination?.call();
   }
@@ -750,11 +747,11 @@ class _$InvalidEmailAndPasswordCombination
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(ServerError value)? serverError,
-    TResult Function(Unauthorized value)? unauthorized,
-    TResult Function(FieldError value)? fieldError,
-    TResult Function(NoNetwork value)? noNetwork,
-    TResult Function(InvalidEmailAndPasswordCombination value)?
+    TResult? Function(ServerError value)? serverError,
+    TResult? Function(Unauthorized value)? unauthorized,
+    TResult? Function(FieldError value)? fieldError,
+    TResult? Function(NoNetwork value)? noNetwork,
+    TResult? Function(InvalidEmailAndPasswordCombination value)?
         invalidEmailAndPasswordCombination,
   }) {
     return invalidEmailAndPasswordCombination?.call(this);
@@ -780,5 +777,5 @@ class _$InvalidEmailAndPasswordCombination
 
 abstract class InvalidEmailAndPasswordCombination implements AuthFailure {
   const factory InvalidEmailAndPasswordCombination() =
-      _$InvalidEmailAndPasswordCombination;
+      _$InvalidEmailAndPasswordCombinationImpl;
 }

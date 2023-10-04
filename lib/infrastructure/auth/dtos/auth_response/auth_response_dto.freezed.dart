@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'auth_response_dto.dart';
 
@@ -35,7 +35,8 @@ mixin _$AuthResponseDto {
 abstract class $AuthResponseDtoCopyWith<$Res> {
   factory $AuthResponseDtoCopyWith(
           AuthResponseDto value, $Res Function(AuthResponseDto) then) =
-      _$AuthResponseDtoCopyWithImpl<$Res>;
+      _$AuthResponseDtoCopyWithImpl<$Res, AuthResponseDto>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'user') UserDto? user,
       @JsonKey(name: 'token') String? token});
@@ -44,50 +45,54 @@ abstract class $AuthResponseDtoCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AuthResponseDtoCopyWithImpl<$Res>
+class _$AuthResponseDtoCopyWithImpl<$Res, $Val extends AuthResponseDto>
     implements $AuthResponseDtoCopyWith<$Res> {
   _$AuthResponseDtoCopyWithImpl(this._value, this._then);
 
-  final AuthResponseDto _value;
   // ignore: unused_field
-  final $Res Function(AuthResponseDto) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? user = freezed,
     Object? token = freezed,
   }) {
     return _then(_value.copyWith(
-      user: user == freezed
+      user: freezed == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as UserDto?,
-      token: token == freezed
+      token: freezed == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $UserDtoCopyWith<$Res>? get user {
     if (_value.user == null) {
       return null;
     }
 
     return $UserDtoCopyWith<$Res>(_value.user!, (value) {
-      return _then(_value.copyWith(user: value));
+      return _then(_value.copyWith(user: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_AuthResponseDtoCopyWith<$Res>
+abstract class _$$AuthResponseDtoImplCopyWith<$Res>
     implements $AuthResponseDtoCopyWith<$Res> {
-  factory _$$_AuthResponseDtoCopyWith(
-          _$_AuthResponseDto value, $Res Function(_$_AuthResponseDto) then) =
-      __$$_AuthResponseDtoCopyWithImpl<$Res>;
+  factory _$$AuthResponseDtoImplCopyWith(_$AuthResponseDtoImpl value,
+          $Res Function(_$AuthResponseDtoImpl) then) =
+      __$$AuthResponseDtoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'user') UserDto? user,
       @JsonKey(name: 'token') String? token});
@@ -97,27 +102,25 @@ abstract class _$$_AuthResponseDtoCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_AuthResponseDtoCopyWithImpl<$Res>
-    extends _$AuthResponseDtoCopyWithImpl<$Res>
-    implements _$$_AuthResponseDtoCopyWith<$Res> {
-  __$$_AuthResponseDtoCopyWithImpl(
-      _$_AuthResponseDto _value, $Res Function(_$_AuthResponseDto) _then)
-      : super(_value, (v) => _then(v as _$_AuthResponseDto));
+class __$$AuthResponseDtoImplCopyWithImpl<$Res>
+    extends _$AuthResponseDtoCopyWithImpl<$Res, _$AuthResponseDtoImpl>
+    implements _$$AuthResponseDtoImplCopyWith<$Res> {
+  __$$AuthResponseDtoImplCopyWithImpl(
+      _$AuthResponseDtoImpl _value, $Res Function(_$AuthResponseDtoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_AuthResponseDto get _value => super._value as _$_AuthResponseDto;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? user = freezed,
     Object? token = freezed,
   }) {
-    return _then(_$_AuthResponseDto(
-      user: user == freezed
+    return _then(_$AuthResponseDtoImpl(
+      user: freezed == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as UserDto?,
-      token: token == freezed
+      token: freezed == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -127,13 +130,13 @@ class __$$_AuthResponseDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_AuthResponseDto implements _AuthResponseDto {
-  _$_AuthResponseDto(
+class _$AuthResponseDtoImpl implements _AuthResponseDto {
+  _$AuthResponseDtoImpl(
       {@JsonKey(name: 'user') required this.user,
       @JsonKey(name: 'token') required this.token});
 
-  factory _$_AuthResponseDto.fromJson(Map<String, dynamic> json) =>
-      _$$_AuthResponseDtoFromJson(json);
+  factory _$AuthResponseDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AuthResponseDtoImplFromJson(json);
 
   @override
   @JsonKey(name: 'user')
@@ -151,26 +154,27 @@ class _$_AuthResponseDto implements _AuthResponseDto {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AuthResponseDto &&
-            const DeepCollectionEquality().equals(other.user, user) &&
-            const DeepCollectionEquality().equals(other.token, token));
+            other is _$AuthResponseDtoImpl &&
+            (identical(other.user, user) || other.user == user) &&
+            (identical(other.token, token) || other.token == token));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(user),
-      const DeepCollectionEquality().hash(token));
+  int get hashCode => Object.hash(runtimeType, user, token);
 
   @JsonKey(ignore: true)
   @override
-  _$$_AuthResponseDtoCopyWith<_$_AuthResponseDto> get copyWith =>
-      __$$_AuthResponseDtoCopyWithImpl<_$_AuthResponseDto>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AuthResponseDtoImplCopyWith<_$AuthResponseDtoImpl> get copyWith =>
+      __$$AuthResponseDtoImplCopyWithImpl<_$AuthResponseDtoImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AuthResponseDtoToJson(this);
+    return _$$AuthResponseDtoImplToJson(
+      this,
+    );
   }
 }
 
@@ -178,19 +182,19 @@ abstract class _AuthResponseDto implements AuthResponseDto {
   factory _AuthResponseDto(
           {@JsonKey(name: 'user') required final UserDto? user,
           @JsonKey(name: 'token') required final String? token}) =
-      _$_AuthResponseDto;
+      _$AuthResponseDtoImpl;
 
   factory _AuthResponseDto.fromJson(Map<String, dynamic> json) =
-      _$_AuthResponseDto.fromJson;
+      _$AuthResponseDtoImpl.fromJson;
 
   @override
   @JsonKey(name: 'user')
-  UserDto? get user => throw _privateConstructorUsedError;
+  UserDto? get user;
   @override
   @JsonKey(name: 'token')
-  String? get token => throw _privateConstructorUsedError;
+  String? get token;
   @override
   @JsonKey(ignore: true)
-  _$$_AuthResponseDtoCopyWith<_$_AuthResponseDto> get copyWith =>
+  _$$AuthResponseDtoImplCopyWith<_$AuthResponseDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -6,7 +6,8 @@ part of 'user_dto.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UserDto _$$_UserDtoFromJson(Map<String, dynamic> json) => _$_UserDto(
+_$UserDtoImpl _$$UserDtoImplFromJson(Map<String, dynamic> json) =>
+    _$UserDtoImpl(
       id: json['id'] as String?,
       firstName: json['first_name'] as String?,
       lastName: json['last_name'] as String?,
@@ -14,7 +15,7 @@ _$_UserDto _$$_UserDtoFromJson(Map<String, dynamic> json) => _$_UserDto(
       phone: json['phone'] as String?,
     );
 
-Map<String, dynamic> _$$_UserDtoToJson(_$_UserDto instance) =>
+Map<String, dynamic> _$$UserDtoImplToJson(_$UserDtoImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'first_name': instance.firstName,

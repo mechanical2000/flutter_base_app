@@ -13,7 +13,7 @@ class AppSize {
     return ResponsiveValue(
       context,
       defaultValue: defaultValue,
-      valueWhen: [
+      conditionalValues: [
         Condition.equals(name: MOBILE, value: mobileValue),
         Condition.equals(name: TABLET, value: tabletValue),
         Condition.smallerThan(
